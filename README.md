@@ -10,7 +10,6 @@ BMIWellTips: Your personalized guide to health. Discover tailored tips based on 
 Idea-- So, basically this site is all based on the mathematical numbers that are related to our physical health like 'BMI'. This site will provide you the best health and diet advice based on the data (BMI).
 
 
-Code - Code for this website is in three files (as of now - maybe more files 'll added in future.).
 
 
 
