@@ -3,7 +3,7 @@ BMIWellTips: Your personalized guide to health. Discover tailored tips based on 
 
 
 
-<strong> This project is under development, but the concept and the logics that are needed for the project are available in the 'concept' folder. <strong>
+<strong> This project is under development, but the concept and the logics that are needed for the project are available in the 'concept' folder. </strong>
 
 
 
