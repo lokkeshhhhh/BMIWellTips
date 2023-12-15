@@ -12,11 +12,10 @@ body{
     background-color: rgb(8, 50, 50);
     color: rgba(240, 255, 255, 0.76);
 }
-.header-hadding{
+.header-logo{
     text-align: center;
     padding: 25px 0px;
     text-transform: uppercase;
     font-family:Arial, Helvetica, sans-serif;
-    font-weight: 500;
 }
 
