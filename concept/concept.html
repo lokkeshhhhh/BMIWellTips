@@ -106,8 +106,7 @@
 
             } else {
                 document.querySelector('#ans').innerHTML = `Your BMI is ${getBMI} KG/m<sup>2</sup>.`;
-                document.querySelector('#weight').innerHTML = "";
-                document.querySelector('#height').innerHTML = "";
+                
                 if (getBMI >= 30) {
                     document.querySelector('#advice').innerHTML = "Your weight is over the normal range even more than the overweight category. Start loosing weight or you will fall ill and take some advices from your trusted doctors."
                 } else if (getBMI > 25) {
