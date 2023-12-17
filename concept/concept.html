@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMIWellTips</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            background-color: #212121;
+            color: #c1c1c1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container{
+            margin-top: 150px;
+            height: 1000px;
+        }
+
+        input{
+            padding: 10px;
+            margin: 10px;
+            background-color: rgb(4, 60, 65);
+            color: azure;
+            border: none;
+        }
+        label{
+            padding: 10px;
+            margin: 10px;
+            font-size: 20px;
+        }
+        button{
+            padding: 10px;
+            margin: 15px ;
+            width: 94%;
+            cursor: pointer;
+            background-color: rgb(4, 60, 65);
+            color: azure;
+            border: none;
+        }
+
+        #ans{
+            text-align: center;
+            height: 50px;
+        }
+        
+        h4{
+            height: 30px;
+            text-align: center;
+            width: 410px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(4, 109, 109);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label for="weight">Enter Your weight(KG)</label>
+        <input type="number" id="weight" name="weight" required><br>
+
+        <label for="height">Enter Your height(CM)</label>
+        <input type="number" id="height" name="height" required><br>
+
+        <button id="submit" name="submit">Submit</button>
+
+        <h3 id="ans"></h3>
+
+        <h4 id="advice"></h4>
+    </div>
+
+
+
+    <div><p>Made BY <a href="https://www.instagram.com/lokkeshhhhh?utm_source=qr&igshid=YzU1NGVlODEzOA%3D%3D">lokesh kumawat</a></p></div>
+</body>
+<script>
+
+
+    document.querySelector('#submit').addEventListener('click', function () {
+        const weight = document.querySelector('#weight').value;
+        const height = document.querySelector('#height').value;
+
+        
+        if(weight>0 && height>0){
+            const changeHeight = height / 100;
+        const squareHeight = changeHeight * changeHeight;
+        
+        const getBMI = weight/squareHeight;
+
+        if(isNaN(getBMI)){
+            document.querySelector('#ans').innerHTML = "Enter the input fields again. Be Careful this time";
+            
+        } else{
+            document.querySelector('#ans').innerHTML =`Your BMI is ${getBMI} KG/m<sup>2</sup>.`;
+            document.querySelector('#weight').innerHTML = "";
+            document.querySelector('#height').innerHTML = "";
+            if(getBMI >=30){
+            document.querySelector('#advice').innerHTML = "Your weight is over the normal range even more than the overweight category. Start loosing weight or you will fall ill and take some advices from your trusted doctors."
+        } else if(getBMI >25){
+            document.querySelector('#advice').innerHTML = "Your weight is over the normal range. Start loosing weight or you will fall ill."
+        } else if(getBMI>18.5){
+            document.querySelector('#advice').innerHTML = "Your weight is normal. Maintain your diet to maintain your weight. "
+        }else{
+            document.querySelector('#advice').innerHTML = "Your weight is below the normal range. Start gaining weight or you will fall ill."
+        }
+        }
+        }
+        
+
+        document.querySelector('#weight').value = "";
+        document.querySelector('#height').value = "";
+    })
+</script>
+
+</html>
