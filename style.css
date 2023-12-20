@@ -15,7 +15,7 @@ body{
 .header-logo{
     text-align: center;
     padding: 25px 0px;
-    text-transform: uppercase;
     font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
 }
 
