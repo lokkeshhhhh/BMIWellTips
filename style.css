@@ -9,5 +9,9 @@ li {
     list-style-type: none;
 }
 #main-div{
-    background-color:#1b0022  ;
+    background-color: rgb(1, 7, 30);
+}
+#navbar{
+    backdrop-filter: blur(10px);
+    background-color: transparent;
 }
