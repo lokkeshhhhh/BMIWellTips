@@ -1,21 +1,7 @@
-
-*{
-    padding: 0;
-    margin: 0;
-}
-body{
-    background-color: rgb(10, 10, 43);
-}
-.header{
-    width: 100%;
-    height: 80px;
-    background-color: rgb(8, 50, 50);
-    color: rgba(240, 255, 255, 0.76);
-}
-.header-logo{
-    text-align: center;
-    padding: 25px 0px;
-    font-family:Arial, Helvetica, sans-serif;
-    letter-spacing: 2px;
+#navbar li a {
+    padding: 10px 15px;
 }
 
+#navbar li:focus {
+    background-color: rgb(65, 32, 2);
+}
