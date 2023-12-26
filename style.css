@@ -5,3 +5,6 @@
 #navbar li:focus {
     background-color: rgb(65, 32, 2);
 }
+li {
+    list-style-type: none;
+}
