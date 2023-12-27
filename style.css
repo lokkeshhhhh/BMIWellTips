@@ -2,8 +2,9 @@
     padding: 10px 15px;
 }
 
-#navbar li:focus {
-    background-color: rgb(65, 32, 2);
+#navbar .nav-item .active {
+    background-color: rgb(6, 153, 141);
+    border: none;
 }
 li {
     list-style-type: none;
