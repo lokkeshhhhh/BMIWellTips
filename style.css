@@ -5,6 +5,7 @@
 #navbar .nav-item .active {
     background-color: rgb(6, 153, 141);
     border: none;
+    color: rgba(208, 249, 255, 0.982);
 }
 li {
     list-style-type: none;
