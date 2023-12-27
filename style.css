@@ -23,7 +23,7 @@ li {
     background-color: transparent;
 }
 #about .first{
-    width: 100%;
+    width: 50%;
     height: 100%;
     background-color: rgb(241, 241, 241);
     margin-left: -15px;
@@ -31,8 +31,14 @@ li {
     justify-content: center;
 }
 #about .second{
-    width: 100%;
+    width: 50%;
     height: 100%;
     background-color: rgb(255, 255, 255);    
     margin-right: -12px;
 }
+#btn-div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
