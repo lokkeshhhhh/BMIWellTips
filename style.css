@@ -22,19 +22,31 @@ li {
     backdrop-filter: blur(10px);
     background-color: transparent;
 }
+#about{
+    display: flex;
+}
+@media screen and (max-width: 480px) {
+    #about{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+    
+
 #about .first{
-    width: 50%;
+    width: 100%;
     height: 100%;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(240, 240, 240);
     margin-left: -15px;
     display: flex;
     justify-content: center;
 }
 #about .second{
-    width: 50%;
+    width: 100%;
     height: 100%;
-    background-color: rgb(255, 255, 255);    
-    margin-right: -12px;
+    background-color: rgb(247, 255, 255);    
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 #btn-div{
     display: flex;
