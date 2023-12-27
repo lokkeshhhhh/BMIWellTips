@@ -11,7 +11,7 @@ li {
 #main-div{
     background-color: rgb(1, 7, 30);
 }
-#navbar{
+#main-navbar{
     backdrop-filter: blur(10px);
     background-color: transparent;
 }
