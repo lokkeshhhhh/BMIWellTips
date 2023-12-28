@@ -66,3 +66,9 @@ li {
     color: azure;
 }
 
+#modal-content{
+    background-color:transparent;
+    border: 1px solid rgba(128, 128, 128, 0.295);
+    backdrop-filter: blur(8px);
+    margin-top: 60px;
+}

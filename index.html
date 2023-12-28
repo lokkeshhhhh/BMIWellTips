@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
 </head>
 
 <body>
@@ -24,11 +25,11 @@
                 </div>
 
                 <ul class="collapse navbar-collapse text-white m-2 nav-tabs " role="tablist" id="navbar">
-                    <li class="nav-item m-2"><a href="#home" class="nav-link active" data-bs-toggle="tab">Home</a></li>
-                    <li class="nav-item m-2"><a href="#services" class="nav-link" data-bs-toggle="tab">Services</a></li>
-                    <li class="nav-item m-2"><a href="#contacts" class="nav-link" data-bs-toggle="tab">Contacts</a></li>
-                    <li class="nav-item m-2"><a href="#about" class="nav-link" data-bs-toggle="tab">About</a></li>
-                    <li class="nav-item m-2"><a href="#blogs" class="nav-link" data-bs-toggle="tab">Blogs</a></li>
+                    <li class="nav-item m-2"><a href="#home" class="nav-link active" data-bs-toggle="tab" id="home-btn">Home</a></li>
+                    <li class="nav-item m-2"><a href="#services" class="nav-link" data-bs-toggle="tab" id="services-btn">Services</a></li>
+                    <li class="nav-item m-2"><a href="#contacts" class="nav-link" data-bs-toggle="tab" id="contacts-btn">Contacts</a></li>
+                    <li class="nav-item m-2"><a href="#about" class="nav-link" data-bs-toggle="tab" id="about-btn">About</a></li>
+                    <li class="nav-item m-2"><a href="#blogs" class="nav-link" data-bs-toggle="tab" id="blogs-btn">Blogs</a></li>
                 </ul>
             </nav>
         </div>
@@ -76,7 +77,7 @@
                         <p class="text-center">HealthCare Adviser</p>
 
                         <div class="container-fluid-sm" id="btn-div">
-                            <button class="btn  text-white bg-dark container-fluid-sm rounded-0" type="button" data-bs-toggle="modal" data-bs-target="#modal1">Check
+                            <button class="btn  text-white bg-dark container-fluid-sm rounded-0" type="button" >Check
                                 Your BMI Now!</button>
                         </div>
                         <p class="text-center mt-3">Follow Us On :</p>
@@ -104,7 +105,7 @@
                         on a journey towards optimal health, where precision matters.</p><br>
 
                     <div class="container-fluid-sm" id="btn-div">
-                        <button class="btn  text-white bg-dark container-fluid-sm m-3 rounded-0" type="button" data-bs-toggle="modal" data-bs-target="#modal1"><a
+                        <button class="btn  text-white bg-dark container-fluid-sm m-3 rounded-0" type="button" ><a
                                 href="#home">Check Your BMI Now!</a></button>
 
                         <button class="btn  text-white bg-dark container-fluid-sm m-3 rounded-0" type="button">About
@@ -122,7 +123,12 @@
                     repellat!</p>
             </div>
         </div>
+
+        
     </main>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
