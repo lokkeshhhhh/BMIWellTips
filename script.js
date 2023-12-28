@@ -18,5 +18,8 @@ document.getElementById("about-btn").addEventListener('click', () => {
 
 document.getElementById("about-bmi").addEventListener('click', () => {
     document.getElementById("home-btn").click();
-    console.log("lokesh");
+})
+
+document.getElementById("about-developer").addEventListener('click', () => {
+    document.getElementById("blogs-btn").click();
 })
