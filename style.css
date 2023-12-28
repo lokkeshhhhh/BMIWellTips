@@ -46,7 +46,7 @@ li {
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    .linkss{
+    .linkss,.socials{
         flex-direction: column;
         justify-content: center;
     }
@@ -54,7 +54,12 @@ li {
         font-size: 20px;
         color: azure;
     }
-    
+    .followus{
+        font-size: 15px;
+    }
+    .company-div{
+        font-size: 13;
+    }
 }
     
 
@@ -92,7 +97,13 @@ footer{
 .links,.company{
     font-size: 20px;
 }
+
 .portfolio a{
     text-decoration: none;
     color: white;
 }
+.linkss{
+    display: flex;
+    justify-content: space-around;
+}
+
