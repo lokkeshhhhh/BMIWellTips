@@ -86,43 +86,47 @@
         <p>Made BY <a href="https://www.instagram.com/lokkeshhhhh?utm_source=qr&igshid=YzU1NGVlODEzOA%3D%3D">lokesh
                 kumawat</a></p>
     </div>
-</body>
-<script>
 
 
-    document.querySelector('#submit').addEventListener('click', function () {
-        const weight = document.querySelector('#weight').value;
-        const height = document.querySelector('#height').value;
+
+    <script>
 
 
-        if (weight > 0 && height > 0) {
-            const changeHeight = height / 100;
-            const squareHeight = changeHeight * changeHeight;
-
-            const getBMI = weight / squareHeight;
-
-            if (isNaN(getBMI)) {
-                document.querySelector('#ans').innerHTML = "Enter the input fields again. Be Careful this time";
-
-            } else {
-                document.querySelector('#ans').innerHTML = `Your BMI is ${getBMI} KG/m<sup>2</sup>.`;
-                
-                if (getBMI >= 30) {
-                    document.querySelector('#advice').innerHTML = "Your weight is over the normal range even more than the overweight category. Start loosing weight or you will fall ill and take some advices from your trusted doctors."
-                } else if (getBMI > 25) {
-                    document.querySelector('#advice').innerHTML = "Your weight is over the normal range. Start loosing weight or you will fall ill."
-                } else if (getBMI > 18.5) {
-                    document.querySelector('#advice').innerHTML = "Your weight is normal. Maintain your diet to maintain your weight. "
+        document.querySelector('#submit').addEventListener('click', function () {
+            const weight = document.querySelector('#weight').value;
+            const height = document.querySelector('#height').value;
+    
+    
+            if (weight > 0 && height > 0) {
+                const changeHeight = height / 100;
+                const squareHeight = changeHeight * changeHeight;
+    
+                const getBMI = weight / squareHeight;
+    
+                if (isNaN(getBMI)) {
+                    document.querySelector('#ans').innerHTML = "Enter the input fields again. Be Careful this time";
+    
                 } else {
-                    document.querySelector('#advice').innerHTML = "Your weight is below the normal range. Start gaining weight or you will fall ill."
+                    document.querySelector('#ans').innerHTML = `Your BMI is ${getBMI} KG/m<sup>2</sup>.`;
+                    
+                    if (getBMI >= 30) {
+                        document.querySelector('#advice').innerHTML = "Your weight is over the normal range even more than the overweight category. Start loosing weight or you will fall ill and take some advices from your trusted doctors."
+                    } else if (getBMI > 25) {
+                        document.querySelector('#advice').innerHTML = "Your weight is over the normal range. Start loosing weight or you will fall ill."
+                    } else if (getBMI > 18.5) {
+                        document.querySelector('#advice').innerHTML = "Your weight is normal. Maintain your diet to maintain your weight. "
+                    } else {
+                        document.querySelector('#advice').innerHTML = "Your weight is below the normal range. Start gaining weight or you will fall ill."
+                    }
                 }
             }
-        }
+    
+    
+            document.querySelector('#weight').value = "";
+            document.querySelector('#height').value = "";
+        })
+    </script>
+</body>
 
-
-        document.querySelector('#weight').value = "";
-        document.querySelector('#height').value = "";
-    })
-</script>
 
 </html>
