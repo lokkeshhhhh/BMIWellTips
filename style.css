@@ -42,6 +42,18 @@ li {
         display: flex;
         justify-content: center;
     }
+    button{
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .linkss{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .links,.company{
+        font-size: 20px;
+        color: azure;
+    }
 }
     
 
@@ -83,6 +95,6 @@ footer{
     height: 100%;
     background-color: #001a1c;
 }
-.links{
+.links,.company{
     font-size: 20px;
 }
