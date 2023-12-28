@@ -94,6 +94,10 @@ footer{
     height: 100%;
     background-color: #001a1c;
 }
+.logo{
+    display: flex;
+    justify-content: center;
+}
 .links,.company{
     font-size: 20px;
 }
