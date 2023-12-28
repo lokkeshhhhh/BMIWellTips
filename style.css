@@ -72,3 +72,9 @@ li {
     backdrop-filter: blur(8px);
     margin-top: 60px;
 }
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #001a1c;
+}
