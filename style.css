@@ -22,17 +22,18 @@ li {
     backdrop-filter: blur(10px);
     background-color: transparent;
 }
-#about{
+#about-pg1{
     display: flex;
 }
+
 @media screen and (max-width: 480px) {
-    #about{
+    #about-pg1{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
     }
 
-    #about .second button {
+    #about-pg1 .second button {
         font-size: 10px;
         padding: 10px 8px;
         width: auto;
@@ -63,14 +64,14 @@ li {
 }
     
 
-#about .first{
+#about-pg1 .first{
     width: 100%;
     height: 100%;
     background-color: rgb(240, 240, 240);
     display: flex;
     justify-content: center;
 }
-#about .second{
+#about-pg1 .second{
     width: 100%;
     height: auto;
     background-color: rgb(255, 255, 255);    
