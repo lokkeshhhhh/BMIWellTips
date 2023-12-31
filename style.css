@@ -24,6 +24,7 @@ li {
 }
 #about-pg1,#about-pg2{
     display: flex;
+    overflow: hidden;
 }
 
 .middle-logo{
@@ -81,6 +82,16 @@ li {
     transform: translateY(0);
 }
 
+#about-pg1 .second{
+    opacity: 0;
+    transform: translateX(640px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+#about-pg2 .second{
+    opacity: 0;
+    transform: translateX(-640px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
 
 footer{
     width: 100%;
