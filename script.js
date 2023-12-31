@@ -20,7 +20,6 @@ document.getElementById("about-btn").addEventListener('click', () => {
 
     const elementsToLoad = document.querySelectorAll('.card, .about-pg');
 
-
     function isInViewport(element) {
         const rect = element.getBoundingClientRect();
         const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
