@@ -115,7 +115,9 @@ footer .btn{
     color: rgb(202, 202, 202);
     font-size: 13px;
 }
-
+.follow-us{
+    font-size: 20px;
+}
 
 @media screen and (max-width: 480px) {
     #about-pg1, #about-pg2{
@@ -152,7 +154,8 @@ footer .btn{
         color: azure;
     }
     .follow-us{
-        font-size: 15px;
+        font-size: 16px;
+        margin-bottom: -15px;
     }
     .company-div{
         font-size: 13;
