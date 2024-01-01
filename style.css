@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -8,26 +8,33 @@
 }
 
 #navbar .nav-item .active {
-    background-color: rgb(6, 153, 141);
+    background-color: rgb(1, 11, 40);
     border: none;
     color: rgba(208, 249, 255, 0.982);
 }
+
 li {
     list-style-type: none;
 }
-#main-div{
-    background-color: rgb(27, 52, 54);
+
+#main-div {
+    background-color: rgb(0, 21, 69);
+    background-image: url(images/Untitled\ design\ \(6\).png);
+    background-position: center;
 }
-#main-navbar{
+
+#main-navbar {
     backdrop-filter: blur(10px);
     background-color: transparent;
 }
-#about-pg1,#about-pg2{
+
+#about-pg1,
+#about-pg2 {
     display: flex;
     overflow: hidden;
 }
 
-.middle-logo{
+.middle-logo {
     margin-top: -30px;
     z-index: 2;
     background-color: rgb(255, 255, 255);
@@ -35,44 +42,49 @@ li {
     padding: 0px 10px;
 }
 
-#about-pg1 .first{
-    width: 100%;
-    height: 100%;
-    background-color:  rgba(133, 156, 156, 0.523);
-    display: flex;
-    justify-content: center;
-}
-#about-pg2 .first{
+#about-pg1 .first {
     width: 100%;
     height: 100%;
     background-color: rgba(133, 156, 156, 0.523);
     display: flex;
     justify-content: center;
 }
-#about-pg1 .second,#about-pg2 .second{
+
+#about-pg2 .first {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(133, 156, 156, 0.523);
+    display: flex;
+    justify-content: center;
+}
+
+#about-pg1 .second,
+#about-pg2 .second {
     width: 100%;
     height: auto;
-    background-color: rgb(255, 255, 255);    
-    font-family:  Geneva, Tahoma, sans-serif;
+    background-color: rgb(255, 255, 255);
+    font-family: Geneva, Tahoma, sans-serif;
     word-spacing: 2px;
     font-weight: 100;
     color: #001a1c;
 }
-#btn-div{
+
+#btn-div {
     display: flex;
     justify-content: center;
     width: 100%;
 }
-.second a{
+
+.second a {
     text-decoration: none;
     color: azure;
 }
 
 
-.card-fist{
+.card-fist {
     width: 100%;
     height: auto;
-    opacity: 0; 
+    opacity: 0;
     transform: translateY(80px);
     transition: opacity 1.5s ease, transform 1.5s ease;
 }
@@ -82,96 +94,156 @@ li {
     transform: translateY(0);
 }
 
-#about-pg1 .second{
+#about-pg1 .second {
     opacity: 0;
     transform: translateX(640px);
     transition: opacity 1.5s ease, transform 1.5s ease;
 }
-#about-pg2 .second{
+
+#about-pg2 .second {
     opacity: 0;
     transform: translateX(-640px);
     transition: opacity 1.5s ease, transform 1.5s ease;
 }
 
-footer{
+footer {
     width: 100%;
     height: 100%;
-    background-color: #1c3e4d;
+    background-color: transparent;
     font-size: small;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 2px;
 }
-footer .btn{
+
+.video-background {
+    position: relative;
+    overflow: hidden;
+}
+
+#myVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#main-footer-div {
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+}
+
+footer .btn {
     color: rgb(185, 185, 185);
     letter-spacing: 2px;
 }
-.all-links{
+
+.all-links {
     display: flex;
     justify-content: space-around;
 }
-.logo{
+
+.logo {
     display: flex;
     justify-content: center;
 }
-.links-span,.company-span{
+
+.links-span,
+.company-span {
     font-size: 20px;
 }
 
-.portfolio a{
+.portfolio a {
     text-decoration: none;
     color: rgb(185, 185, 185);
 }
-.policies p a{
+
+.policies p a {
     text-decoration: none;
     color: rgb(202, 202, 202);
     font-size: 13px;
 }
-.follow-us{
+
+.follow-us {
     font-size: 20px;
 }
 
 @media screen and (max-width: 480px) {
-    #about-pg1, #about-pg2{
+
+    #about-pg1,
+    #about-pg2 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
     }
 
-    #about-pg1 .second button, #about-pg2 .second button {
+    #about-pg1 .second button,
+    #about-pg2 .second button {
         font-size: 10px;
         padding: 10px 8px;
         width: auto;
     }
 
-    .logo{
+    .logo {
         display: flex;
         justify-content: center;
     }
-    button{
+
+    button {
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    .all-links,.socials{
+
+    .all-links,
+    .socials {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .company-div{
+
+    .company-div {
         margin-left: 40px;
     }
-    .links-span,.company-span{
+
+    .links-span,
+    .company-span {
         font-size: 20px;
         color: azure;
     }
-    .follow-us{
+
+    .follow-us {
         font-size: 16px;
         margin-bottom: -15px;
     }
-    .company-div{
+
+    .company-div {
         font-size: 13;
     }
-    .middle-logo{
+
+    .middle-logo {
         margin-top: -50px;
+    }
+
+    footer {
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        background-image: none;
+        font-size: small;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 2px;
     }
 }
