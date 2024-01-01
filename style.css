@@ -136,8 +136,6 @@ footer {
     position: relative;
     z-index: 1;
     color: white;
-    text-align: center;
-    padding: 20px;
 }
 
 #main-footer-div {
@@ -181,6 +179,7 @@ footer .btn {
 }
 
 @media screen and (max-width: 480px) {
+    
 
     #about-pg1,
     #about-pg2 {
