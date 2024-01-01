@@ -1,7 +1,10 @@
+/* remove extra padding and margin */
 * {
     padding: 0;
     margin: 0;
 }
+
+/* navbar styled */
 
 #navbar li a {
     padding: 10px 15px;
@@ -27,6 +30,9 @@ li {
     backdrop-filter: blur(10px);
     background-color: transparent;
 }
+
+
+/* about section styled */
 
 #about-pg1,
 #about-pg2 {
@@ -106,6 +112,9 @@ li {
     transition: opacity 1.5s ease, transform 1.5s ease;
 }
 
+
+
+/* footer styled */
 footer {
     width: 100%;
     height: 100%;
@@ -178,9 +187,12 @@ footer .btn {
     font-size: 20px;
 }
 
+
+
+
+/* responsive (media queries) */
 @media screen and (max-width: 480px) {
     
-
     #about-pg1,
     #about-pg2 {
         display: flex;
