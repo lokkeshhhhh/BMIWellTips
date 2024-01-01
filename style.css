@@ -113,6 +113,15 @@ li {
 }
 
 
+/* thank you note styled */
+.thankyou{
+    font-size: larger;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: center;
+    padding: 50px 0px;
+}
 
 /* footer styled */
 footer {
