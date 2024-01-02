@@ -163,6 +163,7 @@ footer {
     position: relative;
     z-index: 1;
     color: white;
+    background-image: linear-gradient(180deg, transparent,rgba(0, 0, 0, 0.422),rgba(0, 0, 0, 0.714), rgba(0, 0, 0, 0.824),rgba(0, 0, 0, 0.966));
 }
 
 #main-footer-div {
