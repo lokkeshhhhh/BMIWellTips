@@ -55,6 +55,10 @@ li {
     color: #d4d4d4b7;
     border-radius: 10px;
 }
+.health-quote h1:hover{
+    border: 1px solid rgb(74, 91, 175);
+    background-color: rgba(0, 0, 0, 0);
+}
 .health-quote-2{
     max-width: 800px;
     padding: 10px;
@@ -80,7 +84,7 @@ li {
     color: #6c6b6b;
 }
 .bmi-btn .btn:hover{
-    border: 1px solid black;
+    border: 1px solid rgb(74, 91, 175);
 }
 
 .loaded {
