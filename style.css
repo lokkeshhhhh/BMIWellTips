@@ -22,7 +22,7 @@ li {
 
 #main-div {
     background-color: rgb(1, 21, 26);
-    background-image: linear-gradient(90deg,black, rgba(35, 58, 59, 0.342));
+    background-image: linear-gradient(90deg,rgb(0, 0, 11), rgba(14, 1, 37, 0.272));
 }
 
 #main-navbar {
@@ -35,6 +35,7 @@ li {
 
 #home .content{
     height: 600px;
+    background-color: #3e1d02b0;
     background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.806),rgba(0, 0, 0, 0.637),rgba(0, 0, 0, 0.622),rgba(0, 0, 0, 0.714), rgba(0, 0, 0, 0.881),rgb(0, 0, 0));
     backdrop-filter: blur(0px);
     display: flex;
@@ -44,8 +45,9 @@ li {
 }
 .health-quote h1{
     padding: 50px 50px;
-    background-color: rgba(0, 0, 0, 0.858);
+    background-color: rgba(0, 0, 0, 0.788);
     color: #d4d4d4b7;
+    border-radius: 10px;
 }
 .health-quote-2{
     max-width: 800px;
