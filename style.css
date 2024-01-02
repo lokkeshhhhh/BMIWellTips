@@ -46,8 +46,8 @@ li {
 
 .health-quote{
     opacity: 0;
-    transform: translateY(20px);
-    transition: all 1s ease;
+    transform: translateY(70px);
+    transition: all 1.5s ease;
 }
 .health-quote h1{
     padding: 50px 50px;
@@ -60,7 +60,7 @@ li {
     padding: 10px;
     margin-top: 30px;
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(70px);
     transition: all 1.5s ease;
 }
 .health-quote-2 p{
@@ -69,8 +69,8 @@ li {
 }
 .bmi-btn{
     opacity: 0;
-    transform: translateY(20px);
-    transition: all 1s ease;
+    transform: translateY(70px);
+    transition: all 1.5s ease;
 }
 .bmi-btn .btn{
     padding: 20px;
