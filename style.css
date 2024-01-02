@@ -14,6 +14,7 @@
     background-color: rgb(1, 11, 40);
     border: none;
     color: rgba(208, 249, 255, 0.982);
+    border: 1px solid rgb(74, 91, 175);
 }
 
 li {
