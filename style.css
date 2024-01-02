@@ -94,7 +94,14 @@ li {
 .bmi-btn .btn:hover{
     border: 1px solid rgb(74, 91, 175);
 }
-
+.bmi-btn a{
+    text-decoration: none;
+    color: #979797;
+}
+.bmi-btn a:hover {
+    color: rgb(255, 255, 255);
+    transition: all 1s ease;
+}
 .loaded {
     opacity: 1;
     transform: translateY(0);
