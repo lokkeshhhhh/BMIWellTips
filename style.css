@@ -135,10 +135,30 @@ li {
     text-align: center;
     transition: all 0.3s ease;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
 }
+
 .methods .first-row-methods .method-cards:hover{
     box-shadow: 4px 4px 10px 3px rgba(0, 0, 0, 0.16);
 }
+.methods .first-row-methods .method-cards span button{
+    background-color: #001871;
+    margin-top: 80px;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    transition: all 1s ease;
+}
+.methods .first-row-methods .method-cards span button:hover{
+    background-color: #00000000;
+    color: rgb(212, 212, 212);
+    border: 1px solid rgb(74, 91, 175);
+}
+.methods .first-row-methods .frcr-1{
+    background-image: url(images/methods/Bmi.png);
+    background-size: contain;
+}
+
 /* about section styled */
 
 #about-pg1,
@@ -334,12 +354,10 @@ footer .btn {
     .methods .first-row-methods .method-cards{
         width: 150px;
         height: 150px;
-        margin: 10px;
-        text-align: center;
-        transition: all 0.3s ease;
     }
-    .methods .first-row-methods .method-cards:hover{
-        box-shadow: 4px 4px 10px 3px rgba(0, 0, 0, 0.16);
+    
+    .methods .first-row-methods .method-cards span button{
+        margin-top: 70px;
     }
 
     #about-pg1,
