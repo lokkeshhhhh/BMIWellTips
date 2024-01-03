@@ -131,7 +131,7 @@ li {
     flex-wrap: wrap;
     margin: 20px 0px;
 }
-.methods .first-row-methods .method-cards{
+.methods .first-row-methods .card{
     width: 300px;
     background-color: #e9e9e9;
     border: 1px solid rgba(0, 0, 0, 0.128);
@@ -143,7 +143,7 @@ li {
     justify-content: center;
     
 }
-.card{
+.method-cards{
     opacity: 0;
     transform: translateY(80px);
     transition: all 1s ease;
@@ -456,12 +456,7 @@ footer .btn {
         margin-top: -50px;
     }
     footer {
-        width: 100%;
-        height: 100%;
         background-color: #000000;
-        background-image: none;
         font-size: small;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        letter-spacing: 2px;
     }
 }

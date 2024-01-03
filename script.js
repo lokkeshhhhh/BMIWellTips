@@ -2,7 +2,7 @@
 document.getElementById("about").style.display = 'none';
 
 
-const elementsToLoad = document.querySelectorAll('.health-quote, .health-quote-2, .bmi-btn,.card');
+const elementsToLoad = document.querySelectorAll('.health-quote, .health-quote-2, .bmi-btn,.method-cards');
 
 // check home section's video-contents are in viewport or not
 function isInViewport(element) {
@@ -57,7 +57,7 @@ document.getElementById("about-btn").addEventListener('click', () => {
     // make about section visible
     document.getElementById("about").style.display = '';
 
-    const elementsToLoad = document.querySelectorAll('.card, .about-pg');
+    const elementsToLoad = document.querySelectorAll('.about-pg');
 
     // check about section's pages are in viewport or not
     function isInViewport(element) {
