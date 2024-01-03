@@ -121,7 +121,6 @@ li {
 }
 #home-content-2{
     height: auto;
-    /* background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.18),transparent,transparent); */
     margin-top: 100px;
 }
 
@@ -151,7 +150,7 @@ li {
 
 
 .methods .first-row-methods .card:hover{
-    box-shadow: 4px 4px 10px 3px rgba(0, 0, 0, 0.16);
+    box-shadow: 4px 4px 20px 3px rgba(0, 0, 0, 0.582);
 }
 .methods .first-row-methods  span button{
     background-color: #001871;
@@ -185,23 +184,23 @@ li {
     background-size: contain;
 }
 .methods .first-row-methods .frcr-2{
-    background-image: url(images/methods/Bmi1.png);
+    background-image: url(images/methods/bmr.png);
     background-size: contain;
 }
 .methods .first-row-methods .frcr-3{
-    background-image: url(images/methods/Bmi1.png);
+    background-image: url(images/methods/whr.png);
     background-size: contain;
 }
 .methods .first-row-methods .frcr-4{
-    background-image: url(images/methods/Bmi1.png);
+    background-image: url(images/methods/whrt1.png);
     background-size: contain;
 }
 .methods .first-row-methods .frcr-5{
-    background-image: url(images/methods/Bmi1.png);
+    background-image: url(images/methods/bvi.png);
     background-size: contain;
 }
 .methods .first-row-methods .frcr-6{
-    background-image: url(images/methods/Bmi1.png);
+    background-image: url(images/methods/bri.png);
     background-size: contain;
 }
 
@@ -256,7 +255,21 @@ li {
     font-weight: 100;
     color: #001a1c;
 }
-
+#about .btn{
+    background-color: #000000;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.7s ease;
+    padding: 10px;
+}
+#about .btn:hover{
+    border: 1px solid rgb(74, 91, 175);
+    background-color: transparent;
+    color: black;
+}
+#about .btn:hover a{
+    color: black;
+}
 #btn-div {
     display: flex;
     justify-content: center;

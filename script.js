@@ -10,7 +10,7 @@ function isInViewport(element) {
     const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
 
     return (
-        (rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2) ||
+        (rect.top <= windowHeight / 3 && rect.bottom >= windowHeight / 3) ||
         (rect.top >= 0 && rect.bottom <= windowHeight)
     );
 }
@@ -54,7 +54,7 @@ document.getElementById("services-btn").addEventListener('click', () => {
         const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
 
         return (
-            (rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2) ||
+            (rect.top <= windowHeight / 3 && rect.bottom >= windowHeight / 3) ||
             (rect.top >= 0 && rect.bottom <= windowHeight)
         );
     }
@@ -138,9 +138,12 @@ document.getElementById("about-bmi").addEventListener('click', () => {
 })
 
 // redirect to blogs
-document.getElementById("about-developer").addEventListener('click', () => {
-    document.getElementById("blogs-btn").click();
-})
+const aboutDev = document.querySelectorAll("#about-developer");
+for(let i=0;i<aboutDev.length;i++){
+    aboutDev[i].addEventListener('click', () => {
+        document.getElementById("blogs-btn").click();
+    })
+}
 
 // redirect to redirect to home
 document.getElementById("f-home").addEventListener('click', () => {
