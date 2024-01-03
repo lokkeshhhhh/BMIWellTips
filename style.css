@@ -145,7 +145,7 @@ li {
 }
 .method-cards{
     opacity: 0;
-    transform: translateY(80px);
+    transform: translateY(50px);
     transition: all 1s ease;
 }
 
