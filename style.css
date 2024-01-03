@@ -144,18 +144,18 @@ li {
 }
 .methods .first-row-methods .method-cards span button{
     background-color: #001871;
-    margin-top: 80px;
+    margin-top: 120px;
     padding: 10px 20px;
     color: rgb(255, 255, 255);
     transition: all 1s ease;
 }
 .methods .first-row-methods .method-cards span button:hover{
     background-color: #00000000;
-    color: rgb(212, 212, 212);
+    color: rgb(0, 0, 0);
     border: 1px solid rgb(74, 91, 175);
 }
 .methods .first-row-methods .frcr-1{
-    background-image: url(images/methods/Bmi.png);
+    background-image: url(images/methods/Bmi1.png);
     background-size: contain;
 }
 
@@ -357,7 +357,7 @@ footer .btn {
     }
     
     .methods .first-row-methods .method-cards span button{
-        margin-top: 70px;
+        margin-top: 80px;
     }
 
     #about-pg1,
