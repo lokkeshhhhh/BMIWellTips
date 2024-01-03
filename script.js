@@ -2,7 +2,7 @@
 document.getElementById("about").style.display = 'none';
 
 
-const elementsToLoad = document.querySelectorAll('.health-quote, .health-quote-2, .bmi-btn');
+const elementsToLoad = document.querySelectorAll('.health-quote, .health-quote-2, .bmi-btn,.card');
 
 // check home section's video-contents are in viewport or not
 function isInViewport(element) {

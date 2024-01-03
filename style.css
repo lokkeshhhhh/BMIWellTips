@@ -119,6 +119,11 @@ li {
     opacity: 1;
     transform: translateY(0);
 }
+#home-content-2{
+    height: auto;
+    /* background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.18),transparent,transparent); */
+    margin-top: 100px;
+}
 
 .methods .first-row-methods{
     display: flex;
@@ -133,11 +138,17 @@ li {
     height: 300px;
     margin: 10px;
     text-align: center;
-    transition: all 0.3s ease;
     border-radius: 5px;
     display: flex;
     justify-content: center;
+    
 }
+.card{
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 1s ease;
+}
+
 
 .methods .first-row-methods .method-cards:hover{
     box-shadow: 4px 4px 10px 3px rgba(0, 0, 0, 0.16);
@@ -151,21 +162,45 @@ li {
 }
 .methods .first-row-methods .method-cards span button:hover{
     background-color: #00000000;
-    color: rgb(0, 0, 0);
+    color: rgb(200, 200, 200);
     border: 1px solid rgb(74, 91, 175);
 }
 .what-method{
     opacity: 0;
     padding: 50px;
     transition: all 0.5s ease-in-out;
-    margin-top: -60px;
+    margin-top: -65px;
+    border-radius: 5px;
+}
+.frcr-4 .what-method{
+    margin-top: -40px;/
 }
 .what-method:hover{
     opacity: 1;
-    background-image: linear-gradient(black,black,black, transparent);
+    background-image: linear-gradient(black,black,rgba(0, 0, 0, 0.973),rgba(0, 0, 0, 0.675), transparent);
     color: white;
 }
 .methods .first-row-methods .frcr-1{
+    background-image: url(images/methods/Bmi.png);
+    background-size: contain;
+}
+.methods .first-row-methods .frcr-2{
+    background-image: url(images/methods/Bmi1.png);
+    background-size: contain;
+}
+.methods .first-row-methods .frcr-3{
+    background-image: url(images/methods/Bmi1.png);
+    background-size: contain;
+}
+.methods .first-row-methods .frcr-4{
+    background-image: url(images/methods/Bmi1.png);
+    background-size: contain;
+}
+.methods .first-row-methods .frcr-5{
+    background-image: url(images/methods/Bmi1.png);
+    background-size: contain;
+}
+.methods .first-row-methods .frcr-6{
     background-image: url(images/methods/Bmi1.png);
     background-size: contain;
 }
