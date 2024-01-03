@@ -144,7 +144,7 @@ li {
 }
 .methods .first-row-methods .method-cards span button{
     background-color: #001871;
-    margin-top: 120px;
+    margin-top: 20px;
     padding: 10px 20px;
     color: rgb(255, 255, 255);
     transition: all 1s ease;
@@ -153,6 +153,17 @@ li {
     background-color: #00000000;
     color: rgb(0, 0, 0);
     border: 1px solid rgb(74, 91, 175);
+}
+.what-method{
+    opacity: 0;
+    padding: 50px;
+    transition: all 0.5s ease-in-out;
+    margin-top: -60px;
+}
+.what-method:hover{
+    opacity: 1;
+    background-image: linear-gradient(black,black,black, transparent);
+    color: white;
 }
 .methods .first-row-methods .frcr-1{
     background-image: url(images/methods/Bmi1.png);
@@ -344,7 +355,6 @@ footer .btn {
 /* responsive (media queries) */
 @media screen and (max-width: 480px) {
     
-
     .methods .first-row-methods{
         display: flex;
         flex-wrap: wrap;
@@ -355,9 +365,11 @@ footer .btn {
         width: 150px;
         height: 150px;
     }
-    
     .methods .first-row-methods .method-cards span button{
-        margin-top: 80px;
+        margin-top: 60px;
+    }
+    .what-method{
+        display: none;
     }
 
     #about-pg1,
