@@ -150,17 +150,17 @@ li {
 }
 
 
-.methods .first-row-methods .method-cards:hover{
+.methods .first-row-methods .card:hover{
     box-shadow: 4px 4px 10px 3px rgba(0, 0, 0, 0.16);
 }
-.methods .first-row-methods .method-cards span button{
+.methods .first-row-methods  span button{
     background-color: #001871;
     margin-top: 20px;
     padding: 10px 20px;
     color: rgb(255, 255, 255);
     transition: all 1s ease;
 }
-.methods .first-row-methods .method-cards span button:hover{
+.methods .first-row-methods .card span button:hover{
     background-color: #00000000;
     color: rgb(200, 200, 200);
     border: 1px solid rgb(74, 91, 175);
@@ -203,6 +203,15 @@ li {
 .methods .first-row-methods .frcr-6{
     background-image: url(images/methods/Bmi1.png);
     background-size: contain;
+}
+
+
+/* services section styled */
+
+.sr-cards{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
 }
 
 /* about section styled */

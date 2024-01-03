@@ -44,6 +44,36 @@ document.getElementById("contacts-btn").addEventListener('click', () => {
 // change about sections display to none again
 document.getElementById("services-btn").addEventListener('click', () => {
     document.getElementById("about").style.display = 'none';
+    
+
+    const elementsToLoad = document.querySelectorAll('.sr-cards');
+
+    // check home section's video-contents are in viewport or not
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+
+        return (
+            (rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2) ||
+            (rect.top >= 0 && rect.bottom <= windowHeight)
+        );
+    }
+
+    // handle fade effect(add loaded class on loading/scrolling)
+    function handleScroll() {
+        elementsToLoad.forEach((element) => {
+            // check isInViewport()'s return and loaded class's presence
+            if (isInViewport(element) && !element.classList.contains('loaded')) {
+                element.classList.add('loaded');
+            }
+        });
+    }
+
+    handleScroll();
+
+    // call the fn on scrolling
+    window.addEventListener('scroll', handleScroll);
+
 })
 
 // change about sections display to none again
