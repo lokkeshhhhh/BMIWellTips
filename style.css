@@ -209,7 +209,7 @@ li {
 
 .modal-heading {
     text-align: center;
-    color: rgb(186, 187, 188);
+    color: rgb(211, 212, 212);
 }
 .modal-body {
     display: flex;
@@ -221,6 +221,9 @@ li {
     background-color: transparent;
     width: 350px;
     border: 1px solid rgba(178, 213, 254, 0.767);
+}
+.modal-body h4, .modal-body p{
+    color: #d2d2d2;
 }
 .modal-body label{
     color: rgb(186, 187, 188);
