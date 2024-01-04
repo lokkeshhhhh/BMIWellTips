@@ -104,7 +104,6 @@ document.getElementById("about-btn").addEventListener('click', () => {
                     texts[0].style.opacity = 1;
                     texts[0].style.transform = "translateX(0px)";
                 }
-
                 if (elementsToLoad[1].classList.contains('loaded')) {
                     texts[1].style.opacity = 1;
                     texts[1].style.transform = "translateX(0px)";
