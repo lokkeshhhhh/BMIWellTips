@@ -10,7 +10,7 @@ function isInViewport(element) {
     const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
 
     return (
-        (rect.top <= windowHeight / 3 && rect.bottom >= windowHeight / 3) ||
+        (rect.top <= windowHeight*18 / 20 && rect.bottom > windowHeight / 2) ||
         (rect.top >= 0 && rect.bottom <= windowHeight)
     );
 }
@@ -48,7 +48,7 @@ document.getElementById("services-btn").addEventListener('click', () => {
         const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
 
         return (
-            (rect.top <= windowHeight / 3 && rect.bottom >= windowHeight / 3) ||
+            (rect.top <= windowHeight*18 / 20 && rect.bottom > windowHeight / 2) ||
             (rect.top >= 0 && rect.bottom <= windowHeight)
         );
     }
