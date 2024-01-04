@@ -168,3 +168,40 @@ document.getElementById("f-contacts").addEventListener('click', () => {
 
 
 
+// BMI Calculator
+
+document.querySelector('#bmi-submit').addEventListener('click', function () {
+    const weight = document.querySelector('#weight').value;
+    const height = document.querySelector('#height').value;
+
+    if (weight > 0 && height > 0) {
+        const changeHeight = height / 100;
+        const squareHeight = changeHeight * changeHeight;
+        const fullNumber = (weight / squareHeight)*100;
+        const getBMI  = Math.floor(fullNumber)/100;
+
+        if (isNaN(getBMI)) {
+            document.querySelector('#result').innerHTML = "Enter the input fields again. Be Careful this time";
+        } else {
+            document.querySelector('#result').innerHTML = `Your BMI is ${getBMI} KG/m<sup>2</sup>.`;
+            
+            if (getBMI >= 30) {
+                document.querySelector('#result-advice').innerHTML = "Your weight is over the normal range even more than the overweight category. Talk to your doctor now and check out our diet plans to maintain your health."
+            } else if (getBMI > 25) {
+                document.querySelector('#result-advice').innerHTML = "Your weight is over the normal range. Start loosing weight and check out our diet plans to maintain your health."
+            } else if (getBMI > 18.5) {
+                document.querySelector('#result-advice').innerHTML = "Your weight is normal. Check out our diet plans to maintain your health."
+            } else {
+                document.querySelector('#result-advice').innerHTML = "Your weight is below the normal range. Start gaining weight and check out our diet plans to maintain your health."
+            }
+        }
+    }
+
+    document.querySelector('#weight').value = "";
+    document.querySelector('#height').value = "";
+})
+
+document.getElementById("modal-closeBtn").addEventListener('click', () => {
+    document.querySelector('#result-advice').innerHTML = ""
+    document.querySelector('#result').innerHTML = '';
+})

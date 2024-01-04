@@ -224,12 +224,14 @@ li {
 }
 .modal-body h4, .modal-body p{
     color: #d2d2d2;
+    text-align: center;
 }
 .modal-body label{
     color: rgb(186, 187, 188);
 }
 .modal-body .form-control:focus{
     background-color: transparent;
+    color: white;
 }
 #modal-content{
     background-color: transparent;
