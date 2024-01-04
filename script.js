@@ -8,13 +8,11 @@ const elementsToLoad = document.querySelectorAll('.health-quote, .health-quote-2
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
     const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-
     return (
         (rect.top <= windowHeight*18 / 20 && rect.bottom > windowHeight / 2) ||
         (rect.top >= 0 && rect.bottom <= windowHeight)
     );
 }
-
 
 function handleScroll() {
     elementsToLoad.forEach((element) => {
@@ -25,7 +23,6 @@ function handleScroll() {
 }
 
 handleScroll();
-
 window.addEventListener('scroll', handleScroll);
 
 
@@ -46,17 +43,14 @@ document.getElementById("services-btn").addEventListener('click', () => {
     function isInViewport(element) {
         const rect = element.getBoundingClientRect();
         const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-
         return (
             (rect.top <= windowHeight*18 / 20 && rect.bottom > windowHeight / 2) ||
             (rect.top >= 0 && rect.bottom <= windowHeight)
         );
     }
 
-
     function handleScroll() {
         elementsToLoad.forEach((element) => {
-
             if (isInViewport(element) && !element.classList.contains('loaded')) {
                 element.classList.add('loaded');
             }
@@ -64,7 +58,6 @@ document.getElementById("services-btn").addEventListener('click', () => {
     }
 
     handleScroll();
-
     window.addEventListener('scroll', handleScroll);
 
 })
@@ -84,7 +77,6 @@ document.getElementById("about-btn").addEventListener('click', () => {
     function isInViewport(element) {
         const rect = element.getBoundingClientRect();
         const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-
         return (
             (rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2) ||
             (rect.top >= 0 && rect.bottom <= windowHeight)
@@ -98,7 +90,6 @@ document.getElementById("about-btn").addEventListener('click', () => {
 
             if (isInViewport(element) && !element.classList.contains('loaded')) {
                 element.classList.add('loaded');
-
                 // text's fade
                 if (elementsToLoad[0].classList.contains('loaded')) {
                     texts[0].style.opacity = 1;
@@ -113,7 +104,6 @@ document.getElementById("about-btn").addEventListener('click', () => {
     }
 
     handleScroll();
-
     window.addEventListener('scroll', handleScroll);
 
 })
@@ -167,7 +157,6 @@ document.getElementById("f-contacts").addEventListener('click', () => {
 
 
 
-
 // BMI Calculator
 
 document.querySelector('#bmi-submit').addEventListener('click', function () {
@@ -179,7 +168,6 @@ document.querySelector('#bmi-submit').addEventListener('click', function () {
         const squareHeight = changeHeight * changeHeight;
         const fullNumber = (weight / squareHeight)*100;
         const getBMI  = Math.floor(fullNumber)/100;
-
         if (isNaN(getBMI)) {
             document.querySelector('#result').innerHTML = "Enter the input fields again. Be Careful this time";
         } else {
