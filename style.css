@@ -83,7 +83,7 @@ li {
     padding: 10px;
     margin-top: 30px;
     opacity: 0;
-    transform: translateY(70px);
+    transform: translateY(50px);
     transition: all 1.5s ease;
 }
 .health-quote-2 p{
@@ -462,6 +462,17 @@ footer .btn {
 /* responsive (media queries) */
 @media screen and (max-width: 480px) {
     
+    .method-cards{
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 1s ease;
+    }
+
+    .loaded {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
     .methods .first-row-methods{
         display: flex;
         flex-wrap: wrap;
@@ -469,8 +480,8 @@ footer .btn {
         align-items: center;
     }
     .methods .first-row-methods .method-cards{
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
     }
     .methods .first-row-methods .method-cards span button{
         margin-top: 60px;
