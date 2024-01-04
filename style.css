@@ -234,7 +234,7 @@ li {
     color: white;
 }
 #modal-content{
-    background-color: rgba(189, 186, 186, 0.126);
+    background-color: rgba(111, 111, 111, 0.126);
     backdrop-filter: blur(10px);
 }
 .modal{
