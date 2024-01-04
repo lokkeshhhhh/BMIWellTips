@@ -225,6 +225,7 @@ li {
 .modal-body h4, .modal-body p{
     color: #d2d2d2;
     text-align: center;
+    height: 40px;
 }
 .modal-body label{
     color: rgb(186, 187, 188);
@@ -473,6 +474,12 @@ footer .btn {
     }
     .what-method{
         display: none;
+    }
+
+    .modal-body h4, .modal-body p{
+        color: #d2d2d2;
+        text-align: center;
+        height: 60px;
     }
 
     #about-pg1,
