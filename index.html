@@ -101,17 +101,29 @@
                 <div class="modal fade" id="modalBmi">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content" id="modal-content">
+                            <div class="modal-heading">
+                                <h2 class="modal-title">BMI</h2>
+                                <span> (Body Mass Index)</span>
+                            </div>
                             <div class="modal-header">
-                                <h2 class="modal-title">BMI</h2><span> (Body Mass Index)</span>
                                 <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
                             </div>
-
+            
                             <div class="modal-body">
-                                lokesh kumawat
+                                <form>
+                                    <div class="form-floating mb-3 mt-3 weightDiv">
+                                        <input type="number" class="form-control form-control-lg" id="weight" placeholder="Enter your weight" name="weight">
+                                        <label for="weight">Enter your weight</label>
+                                    </div>
+                                    <div class="form-floating mt-3 mb-3 heightDiv">
+                                        <input type="number" class="form-control form-control-lg" id="height" placeholder="Enter your height" name="height">
+                                        <label for="height" >Enter your height</label>
+                                    </div>
+                                </form>
                             </div>
-
+            
                             <div class="modal-footer">
-                                <button class="btn bg-success text-white">done</button>
+                                <button class="btn bg-success text-white" id="bmi-submit">done</button>
                             </div>
                         </div>
                     </div>

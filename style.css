@@ -205,6 +205,36 @@ li {
 }
 
 
+/* modals styled */
+
+.modal-heading {
+    text-align: center;
+    color: rgb(186, 187, 188);
+}
+.modal-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-body .form-control{
+    background-color: transparent;
+    width: 350px;
+    border: 1px solid rgba(178, 213, 254, 0.767);
+}
+.modal-body label{
+    color: rgb(186, 187, 188);
+}
+.modal-body .form-control:focus{
+    background-color: transparent;
+}
+#modal-content{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+.modal{
+    backdrop-filter: blur(10px);
+}
 /* services section styled */
 
 .sr-cards{
