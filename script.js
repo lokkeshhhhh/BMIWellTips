@@ -235,7 +235,7 @@ document.querySelector('#bmr-submit').addEventListener('click', function () {
         }
 
         document.querySelector('#modalBmr #result').innerHTML = `Your Basal Metabolic Rate (BMR) is approximately ${Math.floor(finalBMR * 100) / 100}
-        calories per day, which represents the calories your body needs at rest to maintain basic physiological functions `;
+        calories per day, which represents the calories your body needs at rest to maintain basic physiological functions. `;
 
 
 
@@ -271,7 +271,7 @@ document.querySelector('#bmr-submit').addEventListener('click', function () {
         }
 
         document.querySelector('#modalBmr #result').innerHTML = `Your Basal Metabolic Rate (BMR) is approximately ${Math.floor(finalBMR * 100) / 100}
-        calories per day, which represents the calories your body needs at rest to maintain basic physiological functions `;
+        calories per day, which represents the calories your body needs at rest to maintain basic physiological functions. `;
 
         document.querySelector('#weightMen').value = '';
         document.querySelector('#heightMen').value = '';
