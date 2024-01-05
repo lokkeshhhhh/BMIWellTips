@@ -9,7 +9,7 @@ function isInViewport(element) {
     const rect = element.getBoundingClientRect();
     const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
     return (
-        (rect.top <= windowHeight*18 / 20 && rect.bottom > windowHeight / 2) ||
+        (rect.top <= windowHeight * 18 / 20 && rect.bottom > windowHeight / 2) ||
         (rect.top >= 0 && rect.bottom <= windowHeight)
     );
 }
@@ -44,7 +44,7 @@ document.getElementById("services-btn").addEventListener('click', () => {
         const rect = element.getBoundingClientRect();
         const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
         return (
-            (rect.top <= windowHeight*18 / 20 && rect.bottom > windowHeight / 2) ||
+            (rect.top <= windowHeight * 18 / 20 && rect.bottom > windowHeight / 2) ||
             (rect.top >= 0 && rect.bottom <= windowHeight)
         );
     }
@@ -166,8 +166,8 @@ document.querySelector('#bmi-submit').addEventListener('click', function () {
     if (weight > 0 && height > 0) {
         const changeHeight = height / 100;
         const squareHeight = changeHeight * changeHeight;
-        const fullNumber = (weight / squareHeight)*100;
-        const getBMI  = Math.floor(fullNumber)/100;
+        const fullNumber = (weight / squareHeight) * 100;
+        const getBMI = Math.floor(fullNumber) / 100;
         if (isNaN(getBMI)) {
             document.querySelector('#result').innerHTML = "Enter the input fields again. Be Careful this time";
         } else {
@@ -199,7 +199,7 @@ document.querySelector('#bmr-submit').addEventListener('click', function () {
     const weightWomen = document.querySelector('#weightWomen').value;
     const heightWomen = document.querySelector('#heightWomen').value;
     const ageWomen = document.querySelector('#ageWomen').value;
-    
+
     const menValues = weightMen && heightMen && ageMen;
     const womenValues = weightWomen && heightWomen && ageWomen;
 
@@ -207,7 +207,7 @@ document.querySelector('#bmr-submit').addEventListener('click', function () {
     const preventWomenValues = weightWomen || heightWomen || ageWomen;
 
 
-    if(!preventMenValues && womenValues){
+    if (!preventMenValues && womenValues) {
         const formulaConstant1 = 447.593;
         const formulaConstant2 = 9.247;
         const formulaConstant3 = 3.098;
@@ -215,36 +215,36 @@ document.querySelector('#bmr-submit').addEventListener('click', function () {
 
         const changeHeight = heightWomen / 100;
         const squareHeight = changeHeight * changeHeight;
-        const fullNumber = (weightWomen / squareHeight)*100;
-        const getBMI  = Math.floor(fullNumber)/100;
+        const fullNumber = (weightWomen / squareHeight) * 100;
+        const getBMI = Math.floor(fullNumber) / 100;
 
-        const getBMR = formulaConstant1 + (formulaConstant2 * weightWomen)+
-         (formulaConstant3 * heightWomen) - (formulaConstant4 * ageWomen);
-        
+        const getBMR = formulaConstant1 + (formulaConstant2 * weightWomen) +
+            (formulaConstant3 * heightWomen) - (formulaConstant4 * ageWomen);
+
 
         const dExerciseW = document.querySelector('#dExerciseW');
         const d3ExerciseW = document.querySelector('#d3ExerciseW');
-        
+
         let finalBMR = 0;
-        if(d3ExerciseW.checked){
+        if (d3ExerciseW.checked) {
             finalBMR = getBMR * 1.4;
-        }else if(dExerciseW.checked){
+        } else if (dExerciseW.checked) {
             finalBMR = getBMR * 1.7;
-        }else{
+        } else {
             finalBMR = getBMR * 1.1;
         }
-        
+
         document.querySelector('#modalBmr #result').innerHTML = `Your Basal Metabolic Rate (BMR) is approximately ${finalBMR}
         calories per day, which represents the calories your body needs at rest to maintain basic physiological functions `;
 
-        
+
 
         document.querySelector('#weightWomen').value = '';
         document.querySelector('#heightWomen').value = '';
         document.querySelector('#ageWomen').value = '';
     }
 
-    if(!preventWomenValues && menValues){
+    if (!preventWomenValues && menValues) {
         const formulaConstant1 = 88.362;
         const formulaConstant2 = 13.397;
         const formulaConstant3 = 4.799;
@@ -255,22 +255,22 @@ document.querySelector('#bmr-submit').addEventListener('click', function () {
 
         const changeHeight = heightMen / 100;
         const squareHeight = changeHeight * changeHeight;
-        const fullNumber = (weightMen / squareHeight)*100;
-        const getBMI  = Math.floor(fullNumber)/100;
+        const fullNumber = (weightMen / squareHeight) * 100;
+        const getBMI = Math.floor(fullNumber) / 100;
 
-        const getBMR = formulaConstant1 + (formulaConstant2 * weightMen)+
-         (formulaConstant3 * heightMen) - (formulaConstant4 * ageMen);
+        const getBMR = formulaConstant1 + (formulaConstant2 * weightMen) +
+            (formulaConstant3 * heightMen) - (formulaConstant4 * ageMen);
 
         let finalBMR = 0;
-        if(d3ExerciseM.checked){
+        if (d3ExerciseM.checked) {
             finalBMR = getBMR * 1.4;
-        }else if(dExerciseM.checked){
+        } else if (dExerciseM.checked) {
             finalBMR = getBMR * 1.7;
-        }else{
+        } else {
             finalBMR = getBMR * 1.1;
         }
-        
-        document.querySelector('#modalBmr #result').innerHTML = `Your Basal Metabolic Rate (BMR) is approximately ${Math.floor(finalBMR)/100}
+
+        document.querySelector('#modalBmr #result').innerHTML = `Your Basal Metabolic Rate (BMR) is approximately ${Math.floor(finalBMR) / 100}
         calories per day, which represents the calories your body needs at rest to maintain basic physiological functions `;
 
         document.querySelector('#weightMen').value = '';
@@ -280,10 +280,10 @@ document.querySelector('#bmr-submit').addEventListener('click', function () {
 })
 
 document.querySelector("#women-bmr-btn").addEventListener('click', () => {
-        document.querySelector('#weightMen').value = '';
-        document.querySelector('#heightMen').value = '';
-        document.querySelector('#ageMen').value = '';
-        document.querySelector('#modalBmr #result').innerHTML = ""
+    document.querySelector('#weightMen').value = '';
+    document.querySelector('#heightMen').value = '';
+    document.querySelector('#ageMen').value = '';
+    document.querySelector('#modalBmr #result').innerHTML = ""
 })
 document.querySelector("#men-bmr-btn").addEventListener('click', () => {
     document.querySelector('#weightWomen').value = '';
