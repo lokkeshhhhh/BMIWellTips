@@ -73,7 +73,7 @@ document.getElementById("about-btn").addEventListener('click', () => {
     document.getElementById("about").style.display = '';
 
     const elementsToLoad = document.querySelectorAll('.about-pg');
-
+    
     function isInViewport(element) {
         const rect = element.getBoundingClientRect();
         const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
@@ -176,7 +176,6 @@ document.querySelector('#bmi-submit').addEventListener('click', function () {
             result.innerHTML = "Enter the input fields again. Be Careful this time";
         } else {
             result.innerHTML = `Your BMI is ${getBMI} KG/m<sup>2</sup>.`;
-
             if (getBMI >= 30) {
                 advice.innerHTML = "Your weight is over the normal range even more than the overweight category. Talk to your doctor now and check out our diet plans to maintain your health."
             } else if (getBMI > 25) {
@@ -217,10 +216,8 @@ document.querySelector('#bmr-submit').addEventListener('click', function () {
         const formulaConstant3 = 3.098;
         const formulaConstant4 = 4.330;
 
-
         const getBMR = formulaConstant1 + (formulaConstant2 * weightWomen) +
             (formulaConstant3 * heightWomen) - (formulaConstant4 * ageWomen);
-
 
         const dExerciseW = document.querySelector('#dExerciseW');
         const d3ExerciseW = document.querySelector('#d3ExerciseW');
@@ -260,8 +257,6 @@ document.querySelector('#bmr-submit').addEventListener('click', function () {
 
         document.querySelector('#modalBmr #result').innerHTML = `Your Basal Metabolic Rate (BMR) is approximately ${Math.floor(finalBMR * 100) / 100}
         calories per day, which represents the calories your body needs at rest to maintain basic physiological functions. `;
-
-
 
         document.querySelector('#weightWomen').value = '';
         document.querySelector('#heightWomen').value = '';
@@ -336,8 +331,6 @@ document.querySelector("#men-bmr-btn").addEventListener('click', () => {
     document.querySelector('#modalBmr #result').innerHTML = ""
     document.querySelector('#modalBmr #result-advice') = "";
 })
-
-
 
 
 
