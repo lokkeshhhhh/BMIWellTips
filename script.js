@@ -168,19 +168,23 @@ document.querySelector('#bmi-submit').addEventListener('click', function () {
         const squareHeight = changeHeight * changeHeight;
         const fullNumber = (weight / squareHeight) * 100;
         const getBMI = Math.floor(fullNumber) / 100;
+
+        let result = document.querySelector('#result');
+        let advice = document.querySelector('#result-advice');
+
         if (isNaN(getBMI)) {
-            document.querySelector('#result').innerHTML = "Enter the input fields again. Be Careful this time";
+            result.innerHTML = "Enter the input fields again. Be Careful this time";
         } else {
-            document.querySelector('#result').innerHTML = `Your BMI is ${getBMI} KG/m<sup>2</sup>.`;
+            result.innerHTML = `Your BMI is ${getBMI} KG/m<sup>2</sup>.`;
 
             if (getBMI >= 30) {
-                document.querySelector('#result-advice').innerHTML = "Your weight is over the normal range even more than the overweight category. Talk to your doctor now and check out our diet plans to maintain your health."
+                advice.innerHTML = "Your weight is over the normal range even more than the overweight category. Talk to your doctor now and check out our diet plans to maintain your health."
             } else if (getBMI > 25) {
-                document.querySelector('#result-advice').innerHTML = "Your weight is over the normal range. Start loosing weight and check out our diet plans to maintain your health."
+                advice.innerHTML = "Your weight is over the normal range. Start loosing weight and check out our diet plans to maintain your health."
             } else if (getBMI > 18.5) {
-                document.querySelector('#result-advice').innerHTML = "Your Body Mass Index (BMI) is normal, falling within the normal weight range. This suggests a healthy weight for your height. Check out our diet plans to maintain your health."
+                advice.innerHTML = "Your Body Mass Index (BMI) is normal, falling within the normal weight range. This suggests a healthy weight for your height. Check out our diet plans to maintain your health."
             } else {
-                document.querySelector('#result-advice').innerHTML = "Your weight is below the normal range. Start gaining weight and check out our diet plans to maintain your health."
+                advice.innerHTML = "Your weight is below the normal range. Start gaining weight and check out our diet plans to maintain your health."
             }
         }
     }
@@ -206,17 +210,13 @@ document.querySelector('#bmr-submit').addEventListener('click', function () {
     const preventMenValues = weightMen || heightMen || ageMen;
     const preventWomenValues = weightWomen || heightWomen || ageWomen;
 
-
+    // For Women
     if (!preventMenValues && womenValues) {
         const formulaConstant1 = 447.593;
         const formulaConstant2 = 9.247;
         const formulaConstant3 = 3.098;
         const formulaConstant4 = 4.330;
 
-        const changeHeight = heightWomen / 100;
-        const squareHeight = changeHeight * changeHeight;
-        const fullNumber = (weightWomen / squareHeight) * 100;
-        const getBMI = Math.floor(fullNumber) / 100;
 
         const getBMR = formulaConstant1 + (formulaConstant2 * weightWomen) +
             (formulaConstant3 * heightWomen) - (formulaConstant4 * ageWomen);
@@ -234,6 +234,30 @@ document.querySelector('#bmr-submit').addEventListener('click', function () {
             finalBMR = getBMR * 1.1;
         }
 
+        const changeHeight = heightWomen / 100;
+        const squareHeight = changeHeight * changeHeight;
+        const fullNumber = (weightWomen / squareHeight) * 100;
+        const getBMI = Math.floor(fullNumber) / 100;
+
+        let advice = document.querySelector('#modalBmr #result-advice');
+
+        if(getBMI>=30){
+            advice.innerHTML = `It seems you might be consuming an excess of calories(too much). Consider moderating your 
+            meals and exploring our diet and exercise plans for personalized guidance on maintaining a healthier lifestyle.`
+        }else if(getBMI>25){
+            advice.innerHTML = `It seems you might be consuming an excess of calories. Consider moderating your meals and 
+            exploring our diet and exercise plans for personalized guidance on maintaining a healthier lifestyle.`;
+        }else if(getBMI>23.5){
+            advice.innerHTML = `It appears you're managing your calorie intake well. Keep it up! Explore our diet and exercise 
+            plans for additional support on your journey towards a healthier lifestyle.`;
+        }else if(getBMI>18.5){
+            advice.innerHTML = `It appears that you are in good health. Consider gradually incorporating a balanced increase in your 
+            meals. Explore our diet and exercise plans for personalized guidance on sustaining a healthy and well-rounded lifestyle.`;
+        }else{
+            advice.innerHTML = `It appears that your current meal intake is on the lower side. Consider gradually increasing your meals for 
+            a more balanced approach to nutrition. Explore our diet and exercise plans for personalized guidance on sustaining a healthy and well-rounded lifestyle.`;9
+        }
+
         document.querySelector('#modalBmr #result').innerHTML = `Your Basal Metabolic Rate (BMR) is approximately ${Math.floor(finalBMR * 100) / 100}
         calories per day, which represents the calories your body needs at rest to maintain basic physiological functions. `;
 
@@ -244,6 +268,7 @@ document.querySelector('#bmr-submit').addEventListener('click', function () {
         document.querySelector('#ageWomen').value = '';
     }
 
+    // For Men
     if (!preventWomenValues && menValues) {
         const formulaConstant1 = 88.362;
         const formulaConstant2 = 13.397;
@@ -252,11 +277,6 @@ document.querySelector('#bmr-submit').addEventListener('click', function () {
 
         const dExerciseM = document.querySelector('#dExerciseM');
         const d3ExerciseM = document.querySelector('#d3ExerciseM');
-
-        const changeHeight = heightMen / 100;
-        const squareHeight = changeHeight * changeHeight;
-        const fullNumber = (weightMen / squareHeight) * 100;
-        const getBMI = Math.floor(fullNumber) / 100;
 
         const getBMR = formulaConstant1 + (formulaConstant2 * weightMen) +
             (formulaConstant3 * heightMen) - (formulaConstant4 * ageMen);
@@ -268,6 +288,29 @@ document.querySelector('#bmr-submit').addEventListener('click', function () {
             finalBMR = getBMR * 1.7;
         } else {
             finalBMR = getBMR * 1.1;
+        }
+
+        const changeHeight = heightMen / 100;
+        const squareHeight = changeHeight * changeHeight;
+        const fullNumber = (weightMen / squareHeight) * 100;
+        const getBMI = Math.floor(fullNumber) / 100;
+        let advice = document.querySelector('#modalBmr #result-advice');
+
+        if(getBMI>=30){
+            advice.innerHTML = `It seems you might be consuming an excess of calories(too much). Consider moderating your 
+            meals and exploring our diet and exercise plans for personalized guidance on maintaining a healthier lifestyle.`
+        }else if(getBMI>25){
+            advice.innerHTML = `It seems you might be consuming an excess of calories. Consider moderating your meals and 
+            exploring our diet and exercise plans for personalized guidance on maintaining a healthier lifestyle.`;
+        }else if(getBMI>23.5){
+            advice.innerHTML = `It appears you're managing your calorie intake well. Keep it up! Explore our diet and exercise 
+            plans for additional support on your journey towards a healthier lifestyle.`;
+        }else if(getBMI>18.5){
+            advice.innerHTML = `It appears that you are in good health. Consider gradually incorporating a balanced increase in your 
+            meals. Explore our diet and exercise plans for personalized guidance on sustaining a healthy and well-rounded lifestyle.`;
+        }else{
+            advice.innerHTML = `It appears that your current meal intake is on the lower side. Consider gradually increasing your meals for 
+            a more balanced approach to nutrition. Explore our diet and exercise plans for personalized guidance on sustaining a healthy and well-rounded lifestyle.`;9
         }
 
         document.querySelector('#modalBmr #result').innerHTML = `Your Basal Metabolic Rate (BMR) is approximately ${Math.floor(finalBMR * 100) / 100}
@@ -284,13 +327,18 @@ document.querySelector("#women-bmr-btn").addEventListener('click', () => {
     document.querySelector('#heightMen').value = '';
     document.querySelector('#ageMen').value = '';
     document.querySelector('#modalBmr #result').innerHTML = ""
+    document.querySelector('#modalBmr #result-advice').innerHTML = "";
 })
 document.querySelector("#men-bmr-btn").addEventListener('click', () => {
     document.querySelector('#weightWomen').value = '';
     document.querySelector('#heightWomen').value = '';
     document.querySelector('#ageWomen').value = '';
     document.querySelector('#modalBmr #result').innerHTML = ""
+    document.querySelector('#modalBmr #result-advice') = "";
 })
+
+
+
 
 
 
@@ -300,5 +348,6 @@ document.querySelectorAll("#modal-closeBtn").forEach((element) => {
         document.querySelector('#result').innerHTML = '';
         document.querySelector('#modalBmr #result').innerHTML = ""
         document.querySelector('#modalBmr #result-advice').innerHTML = ""
+        document.querySelector('#modalBmr #result-advice') = "";
     })
 })
