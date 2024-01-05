@@ -172,7 +172,7 @@ document.querySelector('#bmi-submit').addEventListener('click', function () {
             document.querySelector('#result').innerHTML = "Enter the input fields again. Be Careful this time";
         } else {
             document.querySelector('#result').innerHTML = `Your BMI is ${getBMI} KG/m<sup>2</sup>.`;
-            
+
             if (getBMI >= 30) {
                 document.querySelector('#result-advice').innerHTML = "Your weight is over the normal range even more than the overweight category. Talk to your doctor now and check out our diet plans to maintain your health."
             } else if (getBMI > 25) {
@@ -187,6 +187,12 @@ document.querySelector('#bmi-submit').addEventListener('click', function () {
 
     document.querySelector('#weight').value = "";
     document.querySelector('#height').value = "";
+})
+
+// BMR calculator
+
+document.querySelector('#bmr-submit').addEventListener('click', function () {
+
 })
 
 document.getElementById("modal-closeBtn").addEventListener('click', () => {
