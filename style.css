@@ -392,7 +392,6 @@ li {
     text-align: center;
     padding: 50px 0px;
     border-bottom: 1px solid rgba(74, 91, 175, 0.189);
-    border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.037);
     color: #000000;
     transition: all 1s ease;
