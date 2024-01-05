@@ -217,6 +217,20 @@ li {
     flex-direction: column;
     align-items: center;
 }
+.modal-body .card{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+.modal-body .card-header{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+.modal-body .card-header #men-bmr-btn,#women-bmr-btn{
+    width: 110px;
+    background-color: #000000;
+}
 .modal-body .form-control{
     background-color: transparent;
     width: 350px;
