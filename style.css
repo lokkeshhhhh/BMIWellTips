@@ -236,10 +236,16 @@ li {
     width: 350px;
     border: 1px solid rgba(178, 213, 254, 0.767);
 }
-.modal-body h4, .modal-body p{
+.modal-body h4{
     color: #d2d2d2;
     text-align: center;
-    height: 40px;
+    margin-top: 5px;
+    font-size: 18px;
+}
+.modal-body p{
+    color: #d2d2d2;
+    text-align: center;
+    margin-top: 5px;
 }
 .modal-body label{
     color: rgb(186, 187, 188);
@@ -268,6 +274,7 @@ li {
     background-color: #000000e0;
     color: rgb(86, 86, 86);
 }
+
 /* services section styled */
 .services-heading{
     text-align: center;
@@ -504,12 +511,6 @@ footer .btn {
     }
     .what-method{
         display: none;
-    }
-
-    .modal-body h4, .modal-body p{
-        color: #d2d2d2;
-        text-align: center;
-        height: 60px;
     }
 
     #about-pg1,
