@@ -138,7 +138,7 @@
                                 <span> (Basal Metabolic Rate )</span>
                             </div>
                             <div class="modal-header">
-                                <button class="btn-close bg-white" id="modal-closeBtn" data-bs-dismiss="modal" type="button"></button>
+                                <button class="btn-close bg-white bmr-dismiss" id="modal-closeBtn" data-bs-dismiss="modal" type="button"></button>
                             </div>
             
                             <div class="modal-body" >
@@ -151,16 +151,24 @@
                                                 
                                                     <form>
                                                         <div class="form-floating mb-3 mt-3 weightDiv">
-                                                            <input type="number" class="form-control form-control-lg" id="weight" placeholder="Enter your weight" name="weight">
+                                                            <input type="number" class="form-control form-control-lg" id="weightMen" placeholder="Enter your weight" name="weight">
                                                             <label for="weight">Enter your weight(kg)</label>
                                                         </div>
                                                         <div class="form-floating mt-3 mb-3 heightDiv">
-                                                            <input type="number" class="form-control form-control-lg" id="height" placeholder="Enter your height" name="height">
+                                                            <input type="number" class="form-control form-control-lg" id="heightMen" placeholder="Enter your height" name="height">
                                                             <label for="height" >Enter your height(cm)</label>
                                                         </div>
                                                         <div class="form-floating mt-3 mb-3 ageDiv">
-                                                            <input type="number" class="form-control form-control-lg" id="age" placeholder="Enter your height" name="age" >
+                                                            <input type="number" class="form-control form-control-lg" id="ageMen" placeholder="Enter your height" name="age" >
                                                             <label for="age" >Enter your age(years)</label>
+                                                        </div>
+                                                        <div class="exerciseDiv form-check">
+                                                            <input type="checkbox" class="form-check-input" id="dExerciseM" name="dExercise">
+                                                            <label for="dExerciseM" class="form-check-lable">Exercise On Daily Basis?</label>
+                                                        </div>
+                                                        <div class="exerciseDiv form-check">
+                                                            <input type="checkbox" class="form-check-input" id="d3ExerciseM" name="d3Exercise">
+                                                            <label for="d3ExerciseM" class="form-check-lable">Exercise 3 days a week?</label>
                                                         </div>
                                                     </form>
                                                 
@@ -176,16 +184,24 @@
                                                 
                                                     <form>
                                                         <div class="form-floating mb-3 mt-3 weightDiv">
-                                                            <input type="number" class="form-control form-control-lg" id="weight" placeholder="Enter your weight" name="weight" >
+                                                            <input type="number" class="form-control form-control-lg" id="weightWomen" placeholder="Enter your weight" name="weight" >
                                                             <label for="weight">Enter your weight(kg)</label>
                                                         </div>
                                                         <div class="form-floating mt-3 mb-3 heightDiv">
-                                                            <input type="number" class="form-control form-control-lg" id="height" placeholder="Enter your height" name="height" >
+                                                            <input type="number" class="form-control form-control-lg" id="heightWomen" placeholder="Enter your height" name="height" >
                                                             <label for="height" >Enter your height(cm)</label>
                                                         </div>
                                                         <div class="form-floating mt-3 mb-3 ageDiv">
-                                                            <input type="number" class="form-control form-control-lg" id="age" placeholder="Enter your height" name="age" >
+                                                            <input type="number" class="form-control form-control-lg" id="ageWomen" placeholder="Enter your height" name="age" >
                                                             <label for="age" >Enter your age(years)</label>
+                                                        </div>
+                                                        <div class="exerciseDiv form-check">
+                                                            <input type="checkbox" class="form-check-input" id="dExerciseW" name="dExercise">
+                                                            <label for="dExerciseW" class="form-check-lable">Exercise On Daily Basis?</label>
+                                                        </div>
+                                                        <div class="exerciseDiv form-check">
+                                                            <input type="checkbox" class="form-check-input" id="d3ExerciseW" name="d3Exercise">
+                                                            <label for="d3ExerciseW" class="form-check-lable">Exercise 3 days a week?</label>
                                                         </div>
                                                     </form>
                                                 
@@ -194,7 +210,7 @@
                                     </div>
                                 </div>
 
-                                <h4 id="result"></h4>
+                                <h4 id="result" style="font-size: 16px;"></h4>
                                 <p id="result-advice"></p>
                             </div>
             

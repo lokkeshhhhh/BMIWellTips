@@ -178,7 +178,7 @@ document.querySelector('#bmi-submit').addEventListener('click', function () {
             } else if (getBMI > 25) {
                 document.querySelector('#result-advice').innerHTML = "Your weight is over the normal range. Start loosing weight and check out our diet plans to maintain your health."
             } else if (getBMI > 18.5) {
-                document.querySelector('#result-advice').innerHTML = "Your weight is normal. Check out our diet plans to maintain your health."
+                document.querySelector('#result-advice').innerHTML = "Your Body Mass Index (BMI) is normal, falling within the normal weight range. This suggests a healthy weight for your height. Check out our diet plans to maintain your health."
             } else {
                 document.querySelector('#result-advice').innerHTML = "Your weight is below the normal range. Start gaining weight and check out our diet plans to maintain your health."
             }
@@ -192,10 +192,113 @@ document.querySelector('#bmi-submit').addEventListener('click', function () {
 // BMR calculator
 
 document.querySelector('#bmr-submit').addEventListener('click', function () {
+    const weightMen = document.querySelector('#weightMen').value;
+    const heightMen = document.querySelector('#heightMen').value;
+    const ageMen = document.querySelector('#ageMen').value;
 
+    const weightWomen = document.querySelector('#weightWomen').value;
+    const heightWomen = document.querySelector('#heightWomen').value;
+    const ageWomen = document.querySelector('#ageWomen').value;
+    
+    const menValues = weightMen && heightMen && ageMen;
+    const womenValues = weightWomen && heightWomen && ageWomen;
+
+    const preventMenValues = weightMen || heightMen || ageMen;
+    const preventWomenValues = weightWomen || heightWomen || ageWomen;
+
+
+    if(!preventMenValues && womenValues){
+        const formulaConstant1 = 447.593;
+        const formulaConstant2 = 9.247;
+        const formulaConstant3 = 3.098;
+        const formulaConstant4 = 4.330;
+
+        const changeHeight = heightWomen / 100;
+        const squareHeight = changeHeight * changeHeight;
+        const fullNumber = (weightWomen / squareHeight)*100;
+        const getBMI  = Math.floor(fullNumber)/100;
+
+        const getBMR = formulaConstant1 + (formulaConstant2 * weightWomen)+
+         (formulaConstant3 * heightWomen) - (formulaConstant4 * ageWomen);
+        
+
+        const dExerciseW = document.querySelector('#dExerciseW');
+        const d3ExerciseW = document.querySelector('#d3ExerciseW');
+        
+        let finalBMR = 0;
+        if(d3ExerciseW.checked){
+            finalBMR = getBMR * 1.4;
+        }else if(dExerciseW.checked){
+            finalBMR = getBMR * 1.7;
+        }else{
+            finalBMR = getBMR * 1.1;
+        }
+        
+        document.querySelector('#modalBmr #result').innerHTML = `Your Basal Metabolic Rate (BMR) is approximately ${finalBMR}
+        calories per day, which represents the calories your body needs at rest to maintain basic physiological functions `;
+
+        
+
+        document.querySelector('#weightWomen').value = '';
+        document.querySelector('#heightWomen').value = '';
+        document.querySelector('#ageWomen').value = '';
+    }
+
+    if(!preventWomenValues && menValues){
+        const formulaConstant1 = 88.362;
+        const formulaConstant2 = 13.397;
+        const formulaConstant3 = 4.799;
+        const formulaConstant4 = 5.677;
+
+        const dExerciseM = document.querySelector('#dExerciseM');
+        const d3ExerciseM = document.querySelector('#d3ExerciseM');
+
+        const changeHeight = heightMen / 100;
+        const squareHeight = changeHeight * changeHeight;
+        const fullNumber = (weightMen / squareHeight)*100;
+        const getBMI  = Math.floor(fullNumber)/100;
+
+        const getBMR = formulaConstant1 + (formulaConstant2 * weightMen)+
+         (formulaConstant3 * heightMen) - (formulaConstant4 * ageMen);
+
+        let finalBMR = 0;
+        if(d3ExerciseM.checked){
+            finalBMR = getBMR * 1.4;
+        }else if(dExerciseM.checked){
+            finalBMR = getBMR * 1.7;
+        }else{
+            finalBMR = getBMR * 1.1;
+        }
+        
+        document.querySelector('#modalBmr #result').innerHTML = `Your Basal Metabolic Rate (BMR) is approximately ${Math.floor(finalBMR)/100}
+        calories per day, which represents the calories your body needs at rest to maintain basic physiological functions `;
+
+        document.querySelector('#weightMen').value = '';
+        document.querySelector('#heightMen').value = '';
+        document.querySelector('#ageMen').value = '';
+    }
 })
 
-document.getElementById("modal-closeBtn").addEventListener('click', () => {
-    document.querySelector('#result-advice').innerHTML = ""
-    document.querySelector('#result').innerHTML = '';
+document.querySelector("#women-bmr-btn").addEventListener('click', () => {
+        document.querySelector('#weightMen').value = '';
+        document.querySelector('#heightMen').value = '';
+        document.querySelector('#ageMen').value = '';
+        document.querySelector('#modalBmr #result').innerHTML = ""
+})
+document.querySelector("#men-bmr-btn").addEventListener('click', () => {
+    document.querySelector('#weightWomen').value = '';
+    document.querySelector('#heightWomen').value = '';
+    document.querySelector('#ageWomen').value = '';
+    document.querySelector('#modalBmr #result').innerHTML = ""
+})
+
+
+
+document.querySelectorAll("#modal-closeBtn").forEach((element) => {
+    element.addEventListener('click', () => {
+        document.querySelector('#result-advice').innerHTML = ""
+        document.querySelector('#result').innerHTML = '';
+        document.querySelector('#modalBmr #result').innerHTML = ""
+        document.querySelector('#modalBmr #result-advice').innerHTML = ""
+    })
 })
