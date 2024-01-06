@@ -38,6 +38,6 @@ We welcome contributions from the open-source community. If you have suggestions
 
 ## Connect with Us
 
-For any inquiries or support, feel free to reach out to us at [info@bmiwelltips.com](mailto:info@bmiwelltips.com).
+For any inquiries or support, feel free to reach out to us at [info@bmiwelltips.com](mailto:bmiwelltips@gmail.com).
 
 **Start your journey to a healthier you with BMIWellTips!**
