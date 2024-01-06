@@ -73,7 +73,7 @@ document.getElementById("about-btn").addEventListener('click', () => {
     document.getElementById("about").style.display = '';
 
     const elementsToLoad = document.querySelectorAll('.about-pg');
-    
+
     function isInViewport(element) {
         const rect = element.getBoundingClientRect();
         const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
@@ -329,7 +329,7 @@ document.querySelector("#men-bmr-btn").addEventListener('click', () => {
     document.querySelector('#heightWomen').value = '';
     document.querySelector('#ageWomen').value = '';
     document.querySelector('#modalBmr #result').innerHTML = ""
-    document.querySelector('#modalBmr #result-advice') = "";
+    document.querySelector('#modalBmr #result-advice').innerHTML = "";
 })
 
 
@@ -341,6 +341,6 @@ document.querySelectorAll("#modal-closeBtn").forEach((element) => {
         document.querySelector('#result').innerHTML = '';
         document.querySelector('#modalBmr #result').innerHTML = ""
         document.querySelector('#modalBmr #result-advice').innerHTML = ""
-        document.querySelector('#modalBmr #result-advice') = "";
+        document.querySelector('#modalBmr #result-advice').innerHTML = "";
     })
 })
