@@ -163,11 +163,11 @@
                                                             <label for="age" >Enter your age(years)</label>
                                                         </div>
                                                         <div class="exerciseDiv form-check">
-                                                            <input type="checkbox" class="form-check-input" id="dExerciseM" name="dExercise">
+                                                            <input type="radio" class="form-check-input" id="dExerciseM" name="Exercise">
                                                             <label for="dExerciseM" class="form-check-lable">Exercise On Daily Basis?</label>
                                                         </div>
                                                         <div class="exerciseDiv form-check">
-                                                            <input type="checkbox" class="form-check-input" id="d3ExerciseM" name="d3Exercise">
+                                                            <input type="radio" class="form-check-input" id="d3ExerciseM" name="Exercise">
                                                             <label for="d3ExerciseM" class="form-check-lable">Exercise 3 days a week?</label>
                                                         </div>
                                                     </form>
@@ -196,11 +196,11 @@
                                                             <label for="age" >Enter your age(years)</label>
                                                         </div>
                                                         <div class="exerciseDiv form-check">
-                                                            <input type="checkbox" class="form-check-input" id="dExerciseW" name="dExercise">
+                                                            <input type="radio" class="form-check-input" id="dExerciseW" name="Exercise">
                                                             <label for="dExerciseW" class="form-check-lable">Exercise On Daily Basis?</label>
                                                         </div>
                                                         <div class="exerciseDiv form-check">
-                                                            <input type="checkbox" class="form-check-input" id="d3ExerciseW" name="d3Exercise">
+                                                            <input type="radio" class="form-check-input" id="d3ExerciseW" name="Exercise">
                                                             <label for="d3ExerciseW" class="form-check-lable">Exercise 3 days a week?</label>
                                                         </div>
                                                     </form>
@@ -225,8 +225,8 @@
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content" id="modal-content">
                             <div class="modal-heading">
-                                <h2 class="modal-title">BMI</h2>
-                                <span> (Body Mass Index)</span>
+                                <h2 class="modal-title">WHR</h2>
+                                <span> (Waist Hip Rate)</span>
                             </div>
                             <div class="modal-header">
                                 <button class="btn-close bg-white" id="modal-closeBtn" data-bs-dismiss="modal" type="button"></button>
@@ -258,6 +258,14 @@
                                     <div class="form-floating mt-3 mb-3 heightDiv">
                                         <input type="number" class="form-control form-control-lg" id="hip" placeholder="Enter your Hip Measures" name="hip">
                                         <label for="hip" >Enter your Hip Measures(cm)</label>
+                                    </div>
+                                    <div class="exerciseDiv form-check">
+                                        <input type="radio" class="form-check-input" id="isMen" name="gender" value="men">
+                                        <label for="isMen" class="form-check-lable">Men?</label>
+                                    </div>
+                                    <div class="exerciseDiv form-check">
+                                        <input type="radio" class="form-check-input" id="isWomen" name="gender" value="women">
+                                        <label for="isWomen" class="form-check-lable">Women?</label>
                                     </div>
                                 </form>
 
