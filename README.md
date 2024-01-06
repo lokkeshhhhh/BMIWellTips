@@ -1,4 +1,4 @@
-# BMIWellTips - Your Ultimate Healthcare Adviser
+# BMIWellTips - "Wellness Within You"
 
 ## Overview
 
