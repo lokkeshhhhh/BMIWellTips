@@ -188,8 +188,6 @@ document.querySelector('#bmi-submit').addEventListener('click', function () {
         }
     }
 
-    document.querySelector('#weight').value = "";
-    document.querySelector('#height').value = "";
 })
 
 // BMR calculator
@@ -258,9 +256,6 @@ document.querySelector('#bmr-submit').addEventListener('click', function () {
         document.querySelector('#modalBmr #result').innerHTML = `Your Basal Metabolic Rate (BMR) is approximately ${Math.floor(finalBMR * 100) / 100}
         calories per day, which represents the calories your body needs at rest to maintain basic physiological functions. `;
 
-        document.querySelector('#weightWomen').value = '';
-        document.querySelector('#heightWomen').value = '';
-        document.querySelector('#ageWomen').value = '';
     }
 
     // For Men
@@ -311,9 +306,6 @@ document.querySelector('#bmr-submit').addEventListener('click', function () {
         document.querySelector('#modalBmr #result').innerHTML = `Your Basal Metabolic Rate (BMR) is approximately ${Math.floor(finalBMR * 100) / 100}
         calories per day, which represents the calories your body needs at rest to maintain basic physiological functions. `;
 
-        document.querySelector('#weightMen').value = '';
-        document.querySelector('#heightMen').value = '';
-        document.querySelector('#ageMen').value = '';
     }
 })
 
@@ -380,7 +372,9 @@ document.querySelectorAll("#modal-closeBtn").forEach((element) => {
         document.querySelector('#result-advice').innerHTML = ""
         document.querySelector('#result').innerHTML = '';
         document.querySelector('#modalBmr #result').innerHTML = ""
+        document.querySelector('#modalWhr #result').innerHTML = ""
         document.querySelector('#modalBmr #result-advice').innerHTML = ""
         document.querySelector('#modalBmr #result-advice').innerHTML = "";
+        document.querySelector('#modalWhr #result-advice').innerHTML = "";
     })
 })
