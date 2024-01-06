@@ -332,7 +332,16 @@ document.querySelector("#men-bmr-btn").addEventListener('click', () => {
     document.querySelector('#modalBmr #result-advice').innerHTML = "";
 })
 
+// WHR calculator
 
+document.querySelector("#whr-submit").addEventListener('click', () => {
+    const waistValue = document.getElementById("waist").value;
+    const hipValue = document.getElementById("hip").value;
+
+    const getWHR = (Math.round( (waistValue/hipValue)*100))/100;
+
+    document.querySelector('#modalWhr #result').innerHTML = getWHR;
+})
 
 
 document.querySelectorAll("#modal-closeBtn").forEach((element) => {
