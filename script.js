@@ -392,6 +392,20 @@ document.querySelector("#whtr-submit").addEventListener('click', () => {
         fat distribution. It's recommended to take steps toward a healthier lifestyle. Explore our diet and exercise plans for personalized 
         guidance on achieving a healthier balance.`;
     }
+
+    if(getWHR<=0.90  && isMen.checked){
+        resultAdvice.innerHTML = `Your Waist-to-Hip Ratio (WHR) falls within the normal range. Based on this result, your body 
+        fat distribution seems healthy, and you might be fine. Explore our diet and exercise plans 
+        for personalized guidance on achieving a healthy and sustainable lifestyle.`;
+    }else if(getWHR<=0.95  && isMen.checked){
+        resultAdvice.innerHTML = `Your WHR suggests a slightly increased health risk. Consider maintaining a healthy lifestyle, and 
+        consulting with healthcare professionals can provide personalized insights. Explore our diet and exercise plans 
+        for personalized guidance on achieving a healthy and sustainable lifestyle.`;
+    }else if(getWHR>0.95  && isMen.checked){
+        resultAdvice.innerHTML = `Your WHR indicates a significantly increased health risk. It's advisable to seek guidance from healthcare 
+        professionals to address potential health concerns associated with this result. Explore our diet and exercise plans 
+        for personalized guidance on achieving a healthy and sustainable lifestyle.`;
+    }
 })
 
 
