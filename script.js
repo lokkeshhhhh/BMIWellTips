@@ -366,6 +366,18 @@ document.querySelector("#whr-submit").addEventListener('click', () => {
     }
 })
 
+// WHtR calculator
+
+document.querySelector("#whtr-submit").addEventListener('click', () => {
+    const waistValue = document.querySelector("#modalWhtr #waist").value;
+    const hipValue = document.querySelector("#modalWhtr #hip").value;
+
+    const getWHtR = (Math.round( (waistValue/hipValue)*100))/100;
+
+    document.querySelector('#modalWhtr #result').innerHTML = `Your Waist-to-Height Ratio (WHtR) currently stands at ${getWHtR}.`;
+
+})
+
 
 document.querySelectorAll("#modal-closeBtn").forEach((element) => {
     element.addEventListener('click', () => {
