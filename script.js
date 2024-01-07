@@ -379,6 +379,19 @@ document.querySelector("#whtr-submit").addEventListener('click', () => {
 
     document.querySelector('#modalWhtr #result').innerHTML = `Your Waist-to-Height Ratio (WHtR) currently stands at ${getWHtR}.`;
 
+    if(getWHtR<=0.5  && isWomen.checked){
+        resultAdvice.innerHTML = ` Your Waist-to-Height Ratio (WHtR) is within the healthy range, indicating a balanced body fat 
+        distribution. This is a positive result. Explore our diet and exercise plans for personalized guidance on maintaining a healthy 
+        and sustainable lifestyle.`;
+    }else if(getWHtR<=0.6  && isWomen.checked){
+        resultAdvice.innerHTML = `Your Waist-to-Height Ratio (WHtR) falls within the moderate-risk range. While not alarming, it's a 
+        cue to focus on body fat distribution. Consider exploring our diet and exercise plans for personalized guidance on achieving a 
+        healthy and sustainable lifestyle.`;
+    }else if(getWHtR>0.6  && isWomen.checked){
+        resultAdvice.innerHTML = `Your Waist-to-Height Ratio (WHtR) is in the high-risk range, indicating a potential concern with body 
+        fat distribution. It's recommended to take steps toward a healthier lifestyle. Explore our diet and exercise plans for personalized 
+        guidance on achieving a healthier balance.`;
+    }
 })
 
 
