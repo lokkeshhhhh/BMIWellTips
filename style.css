@@ -261,16 +261,16 @@ li {
 .modal{
     backdrop-filter: blur(10px);
 }
-#bmi-submit,#bmr-submit,#whr-submit{
+#bmi-submit,#bmr-submit,#whr-submit,#whtr-submit{
     background-color: #001871;
     color: white;
     transition: all 1s ease;
 }
-#bmi-submit:hover,#bmr-submit:hover,#whr-submit:hover{
+#bmi-submit:hover,#bmr-submit:hover,#whr-submit:hover,#whtr-submit:hover{
     border: 1px solid rgb(74, 91, 175);
     background-color: transparent;
 }
-#bmi-submit:active,#bmr-submit:active,#whr-submit:active{
+#bmi-submit:active,#bmr-submit:active,#whr-submit:active,#whtr-submit:active{
     background-color: #000000e0;
     color: rgb(86, 86, 86);
 }
