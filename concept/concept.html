@@ -136,20 +136,20 @@
         }
 
         #bmi-submit,
-        #bmr-submit {
+        #bmr-submit,#whr-submit,#whtr-submit {
             background-color: #001871;
             color: white;
             transition: all 1s ease;
         }
 
         #bmi-submit:hover,
-        #bmr-submit:hover {
+        #bmr-submit:hover,#whtr-submit:hover,#whr-submit:hover {
             border: 1px solid rgb(74, 91, 175);
             background-color: transparent;
         }
 
         #bmi-submit:active,
-        #bmr-submit:active {
+        #bmr-submit:active,#whr-submit:active,#whtr-submit:active {
             background-color: #000000e0;
             color: rgb(86, 86, 86);
         }
@@ -172,8 +172,8 @@
     </div>
 
 
-    <div class="home-modal">
-        <div class="modal fade" id="modalBmr">
+
+    <div class="modal fade" id="modalBmr">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content" id="modal-content">
                     <div class="modal-heading">
@@ -282,10 +282,137 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 
     <button class="btn bg-success text-center text-white" data-bs-toggle="modal" data-bs-target="#modalBmr">Check BMR</button>
+
+    <div class="modal fade" id="modalWhr">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" id="modal-content">
+                <div class="modal-heading">
+                    <h2 class="modal-title">WHR</h2>
+                    <span> (Waist Hip Rate)</span>
+                </div>
+                <div class="modal-header">
+                    <button class="btn-close bg-white" id="modal-closeBtn" data-bs-dismiss="modal" type="button"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="accordion" id="accordion">
+                        <div class="card" id="forMen">
+                            <div class="card-header"><a href="#instructions" class="btn text-white ms-1 instructions"
+                                    data-bs-toggle="collapse" id="men-bmr-btn">Instructions</a></div>
+                            <div class="collapse" id="instructions" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    <h4>1. Measure Waist Circumference:</h4>
+                                    <p>Measure the circumference of the narrowest part of the waist, usually above the belly button.</p>
+                                    <hr>
+                                    <h4>2. Measure Hip Circumference:</h4>
+                                    <p>Measure the circumference of the hips at the widest part, typically around the buttocks.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form>
+                        <div class=" mb-3 mt-3 weightDiv">
+                            <label for="waist">Enter your Waist Measures(cm)</label>
+                            <input type="number" class="form-control form-control-lg" id="waist" placeholder="Enter your Waist Measures" name="waist">
+                            
+                        </div>
+                        <div class=" mt-3 mb-3 heightDiv">
+                            <label for="hip" >Enter your Hip Measures(cm)</label>
+                            <input type="number" class="form-control form-control-lg" id="hip" placeholder="Enter your Hip Measures" name="hip">
+                            
+                        </div>
+                        <div class="genderDiv form-check">
+                            <input type="radio" class="form-check-input" id="isMen" name="gender" value="men" checked>
+                            <label for="isMen" class="form-check-lable">Men?</label>
+                        </div>
+                        <div class="genderDiv form-check">
+                            <input type="radio" class="form-check-input" id="isWomen" name="gender" value="women">
+                            <label for="isWomen" class="form-check-lable">Women?</label>
+                        </div>
+                    </form>
+
+                    <h4 id="result" class="mt-3"></h4>
+                    <p id="result-advice"></p>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn" id="whr-submit">Check WHR!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn bg-success text-center text-white" data-bs-toggle="modal" data-bs-target="#modalWhr">Check WHR</button>
+
+    <div class="modal fade" id="modalWhtr">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" id="modal-content">
+                <div class="modal-heading">
+                    <h2 class="modal-title">WHrT</h2>
+                    <span> (Waist to Height Ratio)</span>
+                </div>
+                <div class="modal-header">
+                    <button class="btn-close bg-white" id="modal-closeBtn" data-bs-dismiss="modal" type="button"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="accordion" id="accordion">
+                        <div class="card" id="forMen">
+                            <div class="card-header"><a href="#instructions" class="btn text-white ms-1 instructions"
+                                    data-bs-toggle="collapse" id="men-bmr-btn">Instructions</a></div>
+                            <div class="collapse" id="instructions" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    <h4>1. Measure Waist Circumference:</h4>
+                                    <p>Measure the circumference of the narrowest part of the waist, usually above the belly button.</p>
+                                    <hr>
+                                    <h4>2. Measure Height:</h4>
+                                    <p>Stand against a flat surface.
+                                        Remove shoes, ensure heels, back, and head against the wall.
+                                        Use ruler or tape to measure height floor to top of head.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form>
+                        <div class=" mb-3 mt-3 weightDiv">
+                            <label for="waist">Enter your Waist Measures(cm)</label>
+                            <input type="number" class="form-control form-control-lg" id="waist" placeholder="Enter your Waist Measures" name="waist">
+                            
+                        </div>
+                        <div class=" mt-3 mb-3 heightDiv">
+                            <label for="height" >Enter your Height Measures(cm)</label>
+                            <input type="number" class="form-control form-control-lg" id="height" placeholder="Enter your Height Measures" name="height">
+                            
+                        </div>
+                        <div class="genderDiv form-check">
+                            <input type="radio" class="form-check-input" id="isMen" name="gender" value="men" checked>
+                            <label for="isMen" class="form-check-lable">Men?</label>
+                        </div>
+                        <div class="genderDiv form-check">
+                            <input type="radio" class="form-check-input" id="isWomen" name="gender" value="women">
+                            <label for="isWomen" class="form-check-lable">Women?</label>
+                        </div>
+                    </form>
+
+                    <h4 id="result" class="mt-3"></h4>
+                    <p id="result-advice"></p>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn" id="whtr-submit">Check WHtR!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn bg-success text-center text-white" data-bs-toggle="modal" data-bs-target="#modalWhtr">Check WHtR</button>
 
     <div>
         <p>Made BY <a href="https://www.instagram.com/lokkeshhhhh?utm_source=qr&igshid=YzU1NGVlODEzOA%3D%3D">lokesh
