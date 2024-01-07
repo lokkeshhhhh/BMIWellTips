@@ -430,11 +430,28 @@ console.log("lokesh");
 
 document.querySelectorAll("#modal-closeBtn").forEach((element) => {
     element.addEventListener('click', () => {
-        document.querySelector('#result-advice').innerHTML = ""
+        document.querySelector('#modalBmi #height').value = "";
+        document.querySelector('#modalBmi #weight').value = "";
+
+        document.querySelector('#modalBmr #weightMen').value = '';
+        document.querySelector('#modalBmr #heightMen').value = '';
+        document.querySelector('#modalBmr #ageMen').value = '';
+        document.querySelector('#modalBmr #weightWomen').value = '';
+        document.querySelector('#modalBmr #heightWomen').value = '';
+        document.querySelector('#modalBmr #ageWomen').value = '';
+
+        document.getElementById("waist").value = "";
+        document.getElementById("hip").value = "";
+
+        document.querySelector("#modalWhtr #waist").value = "";
+        document.querySelector("#modalWhtr #height").value = "";
+        
         document.querySelector('#result').innerHTML = '';
         document.querySelector('#modalBmr #result').innerHTML = ""
         document.querySelector('#modalWhr #result').innerHTML = ""
         document.querySelector('#modalWhtr #result').innerHTML = ""
+
+        document.querySelector('#result-advice').innerHTML = ""
         document.querySelector('#modalBmr #result-advice').innerHTML = ""
         document.querySelector('#modalBmr #result-advice').innerHTML = "";
         document.querySelector('#modalWhr #result-advice').innerHTML = "";
