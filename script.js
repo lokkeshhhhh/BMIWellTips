@@ -335,7 +335,9 @@ document.querySelector("#whr-submit").addEventListener('click', () => {
 
     const getWHR = (Math.round( (waistValue/hipValue)*100))/100;
 
-    document.querySelector('#modalWhr #result').innerHTML = `Your Waist-to-Hip Ratio (WHR) currently stands at ${getWHR}`;
+    if(!isNaN(getWHR)){
+        document.querySelector('#modalWhr #result').innerHTML = `Your Waist-to-Hip Ratio (WHR) currently stands at ${getWHR}`;
+    }
 
     if(getWHR<=0.85  && isWomen.checked){
         resultAdvice.innerHTML = ` Your Waist-to-Hip Ratio (WHR) is normal. According to the result, 
@@ -385,7 +387,9 @@ document.querySelector("#whtr-submit").addEventListener('click', () => {
 console.log("lokesh");
     const getWHtR = (Math.round( (waistValue/hipValue)*100))/100;
 
-    document.querySelector('#modalWhtr #result').innerHTML = `Your Waist-to-Height Ratio (WHtR) currently stands at ${getWHtR}`;
+    if(!isNaN(getWHtR)){
+        document.querySelector('#modalWhtr #result').innerHTML = `Your Waist-to-Height Ratio (WHtR) currently stands at ${getWHtR}`;
+    }
 
     if(getWHtR<=0.45  && isWomen.checked){
         resultAdvice.innerHTML = ` Your Waist-to-Height Ratio (WHtR) is within the healthy range, indicating a balanced body fat 
