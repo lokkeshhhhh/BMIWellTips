@@ -371,6 +371,9 @@ document.querySelector("#whr-submit").addEventListener('click', () => {
 document.querySelector("#whtr-submit").addEventListener('click', () => {
     const waistValue = document.querySelector("#modalWhtr #waist").value;
     const hipValue = document.querySelector("#modalWhtr #hip").value;
+    const isWomen = document.querySelector("#modalWhtr #isWomen");
+    const isMen = document.querySelector("#modalWhtr #isMen");
+    const resultAdvice = document.querySelector('#modalWhtr #result-advice');
 
     const getWHtR = (Math.round( (waistValue/hipValue)*100))/100;
 
