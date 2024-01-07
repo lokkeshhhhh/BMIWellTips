@@ -335,7 +335,7 @@ document.querySelector("#whr-submit").addEventListener('click', () => {
 
     const getWHR = (Math.round( (waistValue/hipValue)*100))/100;
 
-    document.querySelector('#modalWhr #result').innerHTML = `Your Waist-to-Hip Ratio (WHR) currently stands at ${getWHR}.`;
+    document.querySelector('#modalWhr #result').innerHTML = `Your Waist-to-Hip Ratio (WHR) currently stands at ${getWHR}`;
 
     if(getWHR<=0.85  && isWomen.checked){
         resultAdvice.innerHTML = ` Your Waist-to-Hip Ratio (WHR) is normal. According to the result, 
@@ -346,6 +346,10 @@ document.querySelector("#whr-submit").addEventListener('click', () => {
         your lifestyle and consult with healthcare professionals for personalized advice. Explore our diet and exercise 
         plans for personalized guidance on achieving a healthy and sustainable lifestyle.`;
     }else if(getWHR>0.90  && isWomen.checked){
+        resultAdvice.innerHTML = `Your WHR indicates a significantly increased health risk. It's recommended to discuss 
+        this result with healthcare professionals for further evaluation and guidance. Explore our diet and exercise plans 
+        for personalized guidance on achieving a healthy and sustainable lifestyle.`;
+    }else if(getWHR<0.35  && isWomen.checked){
         resultAdvice.innerHTML = `Your WHR indicates a significantly increased health risk. It's recommended to discuss 
         this result with healthcare professionals for further evaluation and guidance. Explore our diet and exercise plans 
         for personalized guidance on achieving a healthy and sustainable lifestyle.`;
@@ -363,6 +367,10 @@ document.querySelector("#whr-submit").addEventListener('click', () => {
         resultAdvice.innerHTML = `Your WHR indicates a significantly increased health risk. It's advisable to seek guidance from healthcare 
         professionals to address potential health concerns associated with this result. Explore our diet and exercise plans 
         for personalized guidance on achieving a healthy and sustainable lifestyle.`;
+    }else if(getWHR<0.4  && isMen.checked){
+        resultAdvice.innerHTML = `Your WHR indicates a significantly increased health risk. It's advisable to seek guidance from healthcare 
+        professionals to address potential health concerns associated with this result. Explore our diet and exercise plans 
+        for personalized guidance on achieving a healthy and sustainable lifestyle.`;
     }
 })
 
@@ -370,14 +378,14 @@ document.querySelector("#whr-submit").addEventListener('click', () => {
 
 document.querySelector("#whtr-submit").addEventListener('click', () => {
     const waistValue = document.querySelector("#modalWhtr #waist").value;
-    const hipValue = document.querySelector("#modalWhtr #hip").value;
+    const hipValue = document.querySelector("#modalWhtr #height").value;
     const isWomen = document.querySelector("#modalWhtr #isWomen");
     const isMen = document.querySelector("#modalWhtr #isMen");
     const resultAdvice = document.querySelector('#modalWhtr #result-advice');
-
+console.log("lokesh");
     const getWHtR = (Math.round( (waistValue/hipValue)*100))/100;
 
-    document.querySelector('#modalWhtr #result').innerHTML = `Your Waist-to-Height Ratio (WHtR) currently stands at ${getWHtR}.`;
+    document.querySelector('#modalWhtr #result').innerHTML = `Your Waist-to-Height Ratio (WHtR) currently stands at ${getWHtR}`;
 
     if(getWHtR<=0.45  && isWomen.checked){
         resultAdvice.innerHTML = ` Your Waist-to-Height Ratio (WHtR) is within the healthy range, indicating a balanced body fat 
@@ -391,9 +399,17 @@ document.querySelector("#whtr-submit").addEventListener('click', () => {
         resultAdvice.innerHTML = `Your Waist-to-Height Ratio (WHtR) is in the high-risk range, indicating a potential concern with body 
         fat distribution. It's recommended to take steps toward a healthier lifestyle. Explore our diet and exercise plans for personalized 
         guidance on achieving a healthier balance.`;
+    }else if(getWHtR<0.2  && isWomen.checked){
+        resultAdvice.innerHTML = `Your Waist-to-Height Ratio (WHtR) is in the high-risk range, indicating a potential concern with body 
+        fat distribution. It's recommended to take steps toward a healthier lifestyle. Explore our diet and exercise plans for personalized 
+        guidance on achieving a healthier balance.`;
     }
 
-    if(getWHtR<=0.5  && isMen.checked){
+    if(getWHtR<0.3  && isMen.checked){
+        resultAdvice.innerHTML = `Your Waist-to-Height Ratio (WHtR) is in the high-risk range, suggesting a potential concern with body fat 
+        distribution. It's advisable to take steps toward a healthier lifestyle. Explore our diet and exercise plans for personalized guidance 
+        on achieving a healthier balance.`;
+    }else if(getWHtR<=0.5  && isMen.checked){
         resultAdvice.innerHTML = `Your Waist-to-Height Ratio (WHtR) is within the healthy range, indicating a balanced body fat distribution. 
         You may be on a good track. Explore our diet and exercise plans for personalized guidance on maintaining a healthy lifestyle.`;
     }else if(getWHtR<=0.6  && isMen.checked){
@@ -414,8 +430,10 @@ document.querySelectorAll("#modal-closeBtn").forEach((element) => {
         document.querySelector('#result').innerHTML = '';
         document.querySelector('#modalBmr #result').innerHTML = ""
         document.querySelector('#modalWhr #result').innerHTML = ""
+        document.querySelector('#modalWhtr #result').innerHTML = ""
         document.querySelector('#modalBmr #result-advice').innerHTML = ""
         document.querySelector('#modalBmr #result-advice').innerHTML = "";
         document.querySelector('#modalWhr #result-advice').innerHTML = "";
+        document.querySelector('#modalWhtr #result-advice').innerHTML = "";
     })
 })
