@@ -428,21 +428,39 @@ document.querySelector("#whtr-submit").addEventListener('click', () => {
 })
 
 
-// BFP calculator
+// BAi calculator
 
+
+document.querySelector("#bia-submit").addEventListener('click', () => {
+    const hipValue = Number(document.querySelector("#modalBai #hip").value);
+    const heightValue = Number(document.querySelector("#modalBai #height").value)/100;
+    const isWomen = document.querySelector("#modalBai #isWomen");
+    const isMen = document.querySelector("#modalBai #isMen");
+    const resultAdvice = document.querySelector('#modalBai #result-advice');
+
+    const getBAI = (hipValue / Math.pow(heightValue, 1.5)) - 18;
+
+    document.querySelector('#modalBai #result').innerHTML = getBAI;
+})
 
 
 document.querySelectorAll("#modal-closeBtn").forEach((element) => {
     element.addEventListener('click', () => {
         document.querySelector('#modalBmi #height').value = "";
         document.querySelector('#modalBmi #weight').value = "";
-
+        
         document.querySelector('#modalBmr #weightMen').value = '';
         document.querySelector('#modalBmr #heightMen').value = '';
         document.querySelector('#modalBmr #ageMen').value = '';
         document.querySelector('#modalBmr #weightWomen').value = '';
         document.querySelector('#modalBmr #heightWomen').value = '';
         document.querySelector('#modalBmr #ageWomen').value = '';
+
+        document.querySelector("#modalBmr #d3ExerciseM").checked = false;
+        document.querySelector("#modalBmr #dExerciseM").checked = false;
+        document.querySelector("#modalBmr #d3ExerciseW").checked = false;
+        document.querySelector("#modalBmr #dExerciseW").checked = false;
+        document.querySelector("#modalBmr #NOExerciseW").checked = false;
 
         document.getElementById("waist").value = "";
         document.getElementById("hip").value = "";
