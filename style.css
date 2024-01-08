@@ -231,6 +231,12 @@ li {
     width: 110px;
     background-color: #000000;
 }
+.modal-body #instructions-btn{
+    width: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #000000;
+}
 .modal-body .form-control{
     background-color: transparent;
     width: 350px;
@@ -253,6 +259,9 @@ li {
 .modal-body .form-control:focus{
     background-color: transparent;
     color: white;
+}
+.modal-body .accordion{
+    width: 400px;
 }
 #modal-content{
     background-color: rgba(111, 111, 111, 0.126);
