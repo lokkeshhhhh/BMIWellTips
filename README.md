@@ -21,8 +21,8 @@ Gain insights into your health by calculating your Waist-to-Height Ratio. This r
 ### 5. BVI (Body Volume Index)
 Explore your Body Volume Index to understand your body's volume distribution. This advanced metric provides additional insights into your body composition.
 
-### 6. BrI (Broca's Index)
-Determine your ideal weight with Broca's Index, a simple yet effective tool for assessing whether you are within a healthy weight range for your height.
+### 6. BFP (Body Fat Percentage)
+Estimate your ideal body fat percentage with BFP, a valuable tool to assess whether you are within a healthy range for your overall fitness.
 
 ## Advisory Services
 
