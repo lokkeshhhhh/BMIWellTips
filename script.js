@@ -160,8 +160,8 @@ document.getElementById("f-contacts").addEventListener('click', () => {
 // BMI Calculator
 
 document.querySelector('#bmi-submit').addEventListener('click', function () {
-    const weight = document.querySelector('#weight').value;
-    const height = document.querySelector('#height').value;
+    const weight = Number(document.querySelector('#weight').value);
+    const height = Number(document.querySelector('#height').value);
 
     if (weight > 0 && height > 0) {
         const changeHeight = height / 100;
@@ -193,13 +193,13 @@ document.querySelector('#bmi-submit').addEventListener('click', function () {
 // BMR calculator
 
 document.querySelector('#bmr-submit').addEventListener('click', function () {
-    const weightMen = document.querySelector('#weightMen').value;
-    const heightMen = document.querySelector('#heightMen').value;
-    const ageMen = document.querySelector('#ageMen').value;
+    const weightMen = Number(document.querySelector('#weightMen').value);
+    const heightMen = Number(document.querySelector('#heightMen').value);
+    const ageMen = Number(document.querySelector('#ageMen').value);
 
-    const weightWomen = document.querySelector('#weightWomen').value;
-    const heightWomen = document.querySelector('#heightWomen').value;
-    const ageWomen = document.querySelector('#ageWomen').value;
+    const weightWomen = Number(document.querySelector('#weightWomen').value);
+    const heightWomen = Number(document.querySelector('#heightWomen').value);
+    const ageWomen = Number(document.querySelector('#ageWomen').value);
 
     const menValues = weightMen && heightMen && ageMen;
     const womenValues = weightWomen && heightWomen && ageWomen;
@@ -327,8 +327,8 @@ document.querySelector("#men-bmr-btn").addEventListener('click', () => {
 // WHR calculator
 
 document.querySelector("#whr-submit").addEventListener('click', () => {
-    const waistValue = document.getElementById("waist").value;
-    const hipValue = document.getElementById("hip").value;
+    const waistValue = Number(document.getElementById("waist").value);
+    const hipValue = Number(document.getElementById("hip").value);
     const isWomen = document.getElementById("isWomen");
     const isMen = document.getElementById("isMen");
     const resultAdvice = document.querySelector('#modalWhr #result-advice');
@@ -379,13 +379,13 @@ document.querySelector("#whr-submit").addEventListener('click', () => {
 // WHtR calculator
 
 document.querySelector("#whtr-submit").addEventListener('click', () => {
-    const waistValue = document.querySelector("#modalWhtr #waist").value;
-    const hipValue = document.querySelector("#modalWhtr #height").value;
+    const waistValue = Number(document.querySelector("#modalWhtr #waist").value);
+    const heightValue = Number(document.querySelector("#modalWhtr #height").value);
     const isWomen = document.querySelector("#modalWhtr #isWomen");
     const isMen = document.querySelector("#modalWhtr #isMen");
     const resultAdvice = document.querySelector('#modalWhtr #result-advice');
-console.log("lokesh");
-    const getWHtR = (Math.round( (waistValue/hipValue)*100))/100;
+
+    const getWHtR = (Math.round( (waistValue/heightValue)*100))/100;
 
     if(!isNaN(getWHtR)){
         document.querySelector('#modalWhtr #result').innerHTML = `Your Waist-to-Height Ratio (WHtR) currently stands at ${getWHtR}`;
@@ -426,6 +426,10 @@ console.log("lokesh");
         on achieving a healthier balance.`;
     }
 })
+
+
+// BFP calculator
+
 
 
 document.querySelectorAll("#modal-closeBtn").forEach((element) => {

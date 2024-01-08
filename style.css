@@ -227,7 +227,7 @@ li {
     display: flex;
     justify-content: center;
 }
-.modal-body .card-header #men-bmr-btn,#women-bmr-btn{
+#men-bmr-btn,#women-bmr-btn,#men-bfp-btn,#women-bfp-btn{
     width: 110px;
     background-color: #000000;
 }
@@ -270,16 +270,16 @@ li {
 .modal{
     backdrop-filter: blur(10px);
 }
-#bmi-submit,#bmr-submit,#whr-submit,#whtr-submit{
+#bmi-submit,#bmr-submit,#whr-submit,#whtr-submit,#bfp-submit{
     background-color: #001871;
     color: white;
     transition: all 1s ease;
 }
-#bmi-submit:hover,#bmr-submit:hover,#whr-submit:hover,#whtr-submit:hover{
+#bmi-submit:hover,#bmr-submit:hover,#whr-submit:hover,#whtr-submit:hover,#bfp-submit:hover{
     border: 1px solid rgb(74, 91, 175);
     background-color: transparent;
 }
-#bmi-submit:active,#bmr-submit:active,#whr-submit:active,#whtr-submit:active{
+#bmi-submit:active,#bmr-submit:active,#whr-submit:active,#whtr-submit:active,#bfp-submit:active{
     background-color: #000000e0;
     color: rgb(86, 86, 86);
 }
