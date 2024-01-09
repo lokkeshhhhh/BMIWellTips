@@ -473,6 +473,8 @@ document.querySelectorAll("#modal-closeBtn").forEach((element) => {
         document.querySelector('#modalBmr #weightWomen').value = '';
         document.querySelector('#modalBmr #heightWomen').value = '';
         document.querySelector('#modalBmr #ageWomen').value = '';
+        document.querySelector('#modalBai #hip').value = '';
+        document.querySelector('#modalBai #height').value = '';
 
         document.querySelector("#modalBmr #d3ExerciseM").checked = false;
         document.querySelector("#modalBmr #dExerciseM").checked = false;
@@ -490,11 +492,13 @@ document.querySelectorAll("#modal-closeBtn").forEach((element) => {
         document.querySelector('#modalBmr #result').innerHTML = ""
         document.querySelector('#modalWhr #result').innerHTML = ""
         document.querySelector('#modalWhtr #result').innerHTML = ""
+        document.querySelector('#modalBai #result').innerHTML = ""
 
         document.querySelector('#result-advice').innerHTML = ""
         document.querySelector('#modalBmr #result-advice').innerHTML = ""
         document.querySelector('#modalBmr #result-advice').innerHTML = "";
         document.querySelector('#modalWhr #result-advice').innerHTML = "";
         document.querySelector('#modalWhtr #result-advice').innerHTML = "";
+        document.querySelector('#modalBai #result-advice').innerHTML = "";
     })
 })
