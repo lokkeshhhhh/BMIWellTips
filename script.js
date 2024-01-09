@@ -434,13 +434,31 @@ document.querySelector("#whtr-submit").addEventListener('click', () => {
 document.querySelector("#bia-submit").addEventListener('click', () => {
     const hipValue = Number(document.querySelector("#modalBai #hip").value);
     const heightValue = Number(document.querySelector("#modalBai #height").value)/100;
-    const isWomen = document.querySelector("#modalBai #isWomen");
-    const isMen = document.querySelector("#modalBai #isMen");
     const resultAdvice = document.querySelector('#modalBai #result-advice');
 
     const getBAI = (hipValue / Math.pow(heightValue, 1.5)) - 18;
 
-    document.querySelector('#modalBai #result').innerHTML = getBAI;
+    if(!isNaN(getBAI) && getBAI!= Infinity){
+        document.querySelector('#modalBai #result').innerHTML = `Your Body Adiposity Index (BAI) currently stands at ${(Math.round( getBAI*100))/100} `;
+
+        if(getBAI<8){
+            resultAdvice.innerHTML = `Ensure you are meeting your nutritional needs and consult with a healthcare professional or a nutritionist. Being 
+            underweight can also pose health risks, so it's important to address this with guidance from a medical professional.`;
+        }else if(getBAI<21){
+            resultAdvice.innerHTML = ` Maintain a balanced diet, engage in regular physical activity, and focus on overall well-being. While you are 
+            within a healthy range, always stay vigilant about your lifestyle choices to avoid potential health issues.`;
+        }else if(getBAI<=25){
+            resultAdvice.innerHTML = `Recognize the potential health risks associated with excess body weight, such as cardiovascular issues and metabolic 
+            conditions. Consider making lifestyle changes like incorporating regular exercise, adjusting your diet, and seeking guidance from healthcare professionals.`;
+        }else if(getBAI>25){
+            resultAdvice.innerHTML = `Acknowledge the increased health risks associated with obesity, including a higher likelihood of cardiovascular diseases, diabetes, 
+            and other conditions. Urgently consult with healthcare professionals to develop a comprehensive plan for weight management, which may include dietary changes, 
+            increased physical activity, and potential medical interventions.`;
+        }
+    }else{
+        document.querySelector('#modalBai #result').innerHTML = `Something definitely went wrong!`;
+    }
+
 })
 
 
