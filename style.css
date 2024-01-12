@@ -124,13 +124,13 @@ li {
     margin-top: 50px;
 }
 
-.methods .first-row-methods{
+.methods .first-row-methods,.healthcare-advice .healthcare-advices{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 20px 0px;
 }
-.methods .first-row-methods .card{
+.methods .first-row-methods .card, .healthcare-advices .card{
     width: 300px;
     background-color: #e9e9e9;
     border: 1px solid rgba(0, 0, 0, 0.128);
@@ -142,29 +142,29 @@ li {
     justify-content: center;
     
 }
-.method-cards{
+.method-cards,.healthcare-advice-cards{
     opacity: 0;
     transform: translateY(50px);
     transition: all 1s ease;
 }
 
 
-.methods .first-row-methods .card:hover{
+.methods .first-row-methods .card:hover,.healthcare-advices .card:hover{
     box-shadow: 4px 4px 20px 3px rgba(0, 0, 0, 0.582);
 }
-.methods .first-row-methods  span button{
+.methods .first-row-methods  span button,.healthcare-advices span button{
     background-color: #001871;
     margin-top: 20px;
     padding: 10px 20px;
     color: rgb(255, 255, 255);
     transition: all 1s ease;
 }
-.methods .first-row-methods .card span button:hover{
+.methods .first-row-methods .card span button:hover, .healthcare-advices .card span button:hover{
     background-color: #00000000;
     color: rgb(200, 200, 200);
     border: 1px solid rgb(74, 91, 175);
 }
-.what-method{
+.what-method,.what-healthcare-advice{
     opacity: 0;
     padding: 50px;
     transition: all 0.5s ease-in-out;
@@ -172,9 +172,9 @@ li {
     border-radius: 5px;
 }
 .frcr-4 .what-method{
-    margin-top: -40px;/
+    margin-top: -40px;
 }
-.what-method:hover{
+.what-method:hover,.what-healthcare-advice:hover{
     opacity: 1;
     background-image: linear-gradient(black,black,rgba(0, 0, 0, 0.973),rgba(0, 0, 0, 0.675), transparent);
     color: white;
@@ -284,7 +284,7 @@ li {
     color: rgb(86, 86, 86);
 }
 
-.healthcare-advices{
+.healthcare-advices-hd{
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 100px 0px;
