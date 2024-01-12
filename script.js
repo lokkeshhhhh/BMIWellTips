@@ -2,7 +2,7 @@
 document.getElementById("about").style.display = 'none';
 
 
-const elementsToLoad = document.querySelectorAll('.health-quote, .health-quote-2, .bmi-btn,.method-cards');
+const elementsToLoad = document.querySelectorAll('.health-quote, .health-quote-2, .bmi-btn,.method-cards, .healthcare-advice-cards');
 
 
 function isInViewport(element) {
