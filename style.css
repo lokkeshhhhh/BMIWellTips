@@ -284,12 +284,17 @@ li {
     color: rgb(86, 86, 86);
 }
 
+.healthcare-advices{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 100px 0px;
+}
+
 /* services section styled */
 .services-heading{
     text-align: center;
-    margin-top: 10px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    border-bottom: 1px solid rgb(74, 91, 175);
+    margin: 50px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .sr-cards{
     opacity: 0;
@@ -390,6 +395,8 @@ li {
     transform: translateX(-640px);
     transition: opacity 1.5s ease, transform 1.5s ease;
 }
+
+
 
 /* thank you note styled */
 .thankyou{
