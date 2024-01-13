@@ -446,15 +446,7 @@ li {
     word-spacing: 2px;
     text-align: center;
     padding: 50px 0px;
-    border-bottom: 1px solid rgba(74, 91, 175, 0.189);
-    background-color: rgba(255, 255, 255, 0.037);
     color: #000000;
-    transition: all 1s ease;
-}
-.thankyou:hover{
-    border-bottom: 1px solid rgb(74, 91, 175);
-    background-color: #00000000;
-    color: rgba(0, 0, 0, 0.879);
 }
 .thankyou-note{
     display: flex;
