@@ -240,6 +240,10 @@ li {
     background-image: url(images/advices/9th-advice.png);
     background-size: contain;
 }
+.healthcare-advice .healthcare-advice-10{
+    background-image: url(images/advices/10th-advice.png);
+    background-size: contain;
+}
 /* modals styled */
 
 .modal-heading {
