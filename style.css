@@ -209,23 +209,23 @@ li {
     background-size: contain;
 }
 .healthcare-advice .healthcare-advice-2{
-    background-image: url(images/methods/bmr.png);
+    background-image: url(images/advices/2nd-advice.png);
     background-size: contain;
 }
 .healthcare-advice .healthcare-advice-3{
-    background-image: url(images/methods/bfp.png);
+    background-image: url(images/advices/3rd-advice.png);
     background-size: contain;
 }
 .healthcare-advice .healthcare-advice-4{
-    background-image: url(images/methods/whr.png);
+    background-image: url(images/advices/4th-advice.png);
     background-size: contain;
 }
 .healthcare-advice .healthcare-advice-5{
-    background-image: url(images/methods/whrt1.png);
+    background-image: url(images/advices/5th-advice.png);
     background-size: contain;
 }
 .healthcare-advice .healthcare-advice-6{
-    background-image: url(images/methods/bvi.png);
+    background-image: url(images/advices/6th-advice.png);
     background-size: contain;
 }
 /* modals styled */
