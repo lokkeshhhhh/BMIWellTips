@@ -256,7 +256,7 @@ li {
 
 .modal-heading {
     text-align: center;
-    color: rgb(211, 212, 212);
+    color: rgb(241, 255, 255);
 }
 .modal-body {
     display: flex;
@@ -290,18 +290,24 @@ li {
     border: 1px solid rgba(178, 213, 254, 0.767);
 }
 .modal-body h4{
-    color: #d2d2d2;
+    color: #e7fbff;
     text-align: center;
     margin-top: 5px;
     font-size: 18px;
 }
+.modal-body h5{
+    color: #e7fbff;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 17px;
+}
 .modal-body p{
-    color: #d2d2d2;
+    color: #e4fbff;
     text-align: center;
     margin-top: 5px;
 }
 .modal-body label{
-    color: rgb(186, 187, 188);
+    color: rgb(231, 253, 255);
 }
 .modal-body .form-control:focus{
     background-color: transparent;
@@ -311,7 +317,7 @@ li {
     width: 400px;
 }
 #modal-content{
-    background-color: rgba(111, 111, 111, 0.126);
+    background-color: rgba(5, 5, 5, 0.126);
     backdrop-filter: blur(10px);
 }
 .modal{
