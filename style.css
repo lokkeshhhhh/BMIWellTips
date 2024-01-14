@@ -244,6 +244,14 @@ li {
     background-image: url(images/advices/10th-advice.png);
     background-size: contain;
 }
+.healthcare-advice .healthcare-advice-11{
+    background-image: url(images/advices/11th-advice.png);
+    background-size: contain;
+}
+.healthcare-advice .healthcare-advice-12{
+    background-image: url(images/advices/12th-advice.png);
+    background-size: contain;
+}
 /* modals styled */
 
 .modal-heading {
