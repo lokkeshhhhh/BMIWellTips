@@ -457,6 +457,24 @@ li {
     transition: all 1s ease;
 }
 
+/* contacts */
+.contacts{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contacts-pg{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+.contacts-pg .contacts-first{
+    width: 50%;
+}
+.contacts-pg .contacts-second{
+    width: 50%;
+}
+
 /* about section styled */
 
 #about-pg1,
@@ -710,6 +728,18 @@ footer .btn {
         text-overflow: ellipsis;
     }
 
+    .contacts-pg{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contacts-pg .contacts-first{
+        width: 100%;
+    }
+    .contacts-pg .contacts-second{
+        width: 100%;
+    }
+    
     .all-links,
     .socials {
         display: flex;
