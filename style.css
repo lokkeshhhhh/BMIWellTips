@@ -5,14 +5,16 @@
 }
 
 /* scroll bar styled */
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     background-color: transparent;
     width: 5px;
 }
-body::-webkit-scrollbar-track{
+
+body::-webkit-scrollbar-track {
     background-color: rgba(29, 0, 40, 0.836)
 }
-body::-webkit-scrollbar-thumb{
+
+body::-webkit-scrollbar-thumb {
     background-color: #000000;
     border: 1px solid rgb(9, 16, 52);
 }
@@ -29,7 +31,8 @@ body::-webkit-scrollbar-thumb{
     color: rgba(208, 249, 255, 0.982);
     border: 1px solid rgb(74, 91, 175);
 }
-#navbar .nav-link:hover{
+
+#navbar .nav-link:hover {
     border: 1px solid rgb(0, 74, 72);
 }
 
@@ -39,7 +42,8 @@ li {
 
 #main-div {
     background-color: rgb(1, 21, 26);
-    background-image: linear-gradient(90deg,rgb(0, 0, 11), rgba(14, 1, 37, 0.272));
+    background-image: linear-gradient(90deg,
+    rgb(0, 0, 11), rgba(14, 1, 37, 0.272));
 }
 
 #main-navbar {
@@ -50,10 +54,12 @@ li {
 
 /* home section styling */
 
-#home .content{
+#home .content {
     height: 600px;
     background-color: #2d25024e;
-    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.406),rgba(0, 0, 0, 0.537),rgba(0, 0, 0, 0.622),rgba(0, 0, 0, 0.714), rgba(0, 0, 0, 0.881),rgb(0, 0, 0));
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.406), 
+    rgba(0, 0, 0, 0.537), rgba(0, 0, 0, 0.622), rgba(0, 0, 0, 0.714), 
+    rgba(0, 0, 0, 0.881), rgb(0, 0, 0));
     backdrop-filter: blur(0px);
     display: flex;
     flex-direction: column;
@@ -61,12 +67,13 @@ li {
     align-items: center;
 }
 
-.health-quote{
+.health-quote {
     opacity: 0;
     transform: translateY(70px);
     transition: all 1.5s ease;
 }
-.health-quote h1{
+
+.health-quote h1 {
     padding: 50px 50px;
     background-color: rgba(0, 0, 0, 0.788);
     color: #d4d4d4b7;
@@ -74,11 +81,13 @@ li {
     border: 1px solid black;
     transition: all 1s ease;
 }
-.health-quote h1:hover{
+
+.health-quote h1:hover {
     border: 1px solid rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0);
 }
-.health-quote-2{
+
+.health-quote-2 {
     max-width: 800px;
     padding: 10px;
     margin-top: 30px;
@@ -86,17 +95,20 @@ li {
     transform: translateY(50px);
     transition: all 1.5s ease;
 }
-.health-quote-2 p{
+
+.health-quote-2 p {
     color: #acacac;
     text-align: center;
     transition: all 1s ease;
 }
-.bmi-btn{
+
+.bmi-btn {
     opacity: 0;
     transform: translateY(70px);
     transition: all 1.5s ease;
 }
-.bmi-btn .btn{
+
+.bmi-btn .btn {
     padding: 20px;
     margin-top: 30px;
     background-color: black;
@@ -104,33 +116,41 @@ li {
     color: #979797;
     transition: all 1s ease;
 }
-.bmi-btn .btn:hover{
+
+.bmi-btn .btn:hover {
     border: 1px solid rgb(74, 91, 175);
 }
-.bmi-btn a{
+
+.bmi-btn a {
     text-decoration: none;
     color: #979797;
 }
+
 .bmi-btn a:hover {
     color: rgb(255, 255, 255);
     transition: all 0.3s ease;
 }
+
 .loaded {
     opacity: 1;
     transform: translateY(0);
 }
-#home-content-2{
+
+#home-content-2 {
     height: auto;
     margin-top: 50px;
 }
 
-.methods .first-row-methods,.healthcare-advice .healthcare-advices{
+.methods .first-row-methods,
+.healthcare-advice .healthcare-advices {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 20px 0px;
 }
-.methods .first-row-methods .card, .healthcare-advices .card{
+
+.methods .first-row-methods .card,
+.healthcare-advices .card {
     width: 300px;
     background-color: #e9e9e9;
     border: 1px solid rgba(0, 0, 0, 0.128);
@@ -140,219 +160,293 @@ li {
     border-radius: 5px;
     display: flex;
     justify-content: center;
-    
+
 }
-.method-cards,.healthcare-advice-cards{
+
+.method-cards,
+.healthcare-advice-cards {
     opacity: 0;
     transform: translateY(50px);
     transition: all 1s ease;
 }
 
 
-.methods .first-row-methods .card:hover,.healthcare-advices .card:hover{
+.methods .first-row-methods .card:hover,
+.healthcare-advices .card:hover {
     box-shadow: 4px 4px 20px 3px rgba(0, 0, 0, 0.582);
 }
-.methods .first-row-methods  span button,.healthcare-advices span button{
+
+.methods .first-row-methods span button,
+.healthcare-advices span button {
     background-color: #001871;
     margin-top: 20px;
     padding: 10px 20px;
     color: rgb(255, 255, 255);
     transition: all 1s ease;
 }
-.methods .first-row-methods .card span button:hover, .healthcare-advices .card span button:hover{
+
+.methods .first-row-methods .card span button:hover,
+.healthcare-advices .card span button:hover {
     background-color: #00000000;
     color: rgb(200, 200, 200);
     border: 1px solid rgb(74, 91, 175);
 }
-.what-method,.what-healthcare-advice{
+
+.what-method,
+.what-healthcare-advice {
     opacity: 0;
     padding: 50px;
     transition: all 0.5s ease-in-out;
     margin-top: -65px;
     border-radius: 5px;
 }
-.frcr-4 .what-method{
+
+.frcr-4 .what-method {
     margin-top: -40px;
 }
-.what-method:hover,.what-healthcare-advice:hover{
+
+.what-method:hover,
+.what-healthcare-advice:hover {
     opacity: 1;
-    background-image: linear-gradient(black,black,rgba(0, 0, 0, 0.973),rgba(0, 0, 0, 0.675), transparent);
+    background-image: linear-gradient(black, black,
+            rgba(0, 0, 0, 0.973), rgba(0, 0, 0, 0.675), transparent);
     color: white;
 }
-.methods .first-row-methods .frcr-1{
+
+.methods .first-row-methods .frcr-1 {
     background-image: url(images/methods/Bmi.png);
     background-size: contain;
 }
-.methods .first-row-methods .frcr-2{
+
+.methods .first-row-methods .frcr-2 {
     background-image: url(images/methods/bmr.png);
     background-size: contain;
 }
-.methods .first-row-methods .frcr-3{
+
+.methods .first-row-methods .frcr-3 {
     background-image: url(images/methods/whr.png);
     background-size: contain;
 }
-.methods .first-row-methods .frcr-4{
+
+.methods .first-row-methods .frcr-4 {
     background-image: url(images/methods/whrt1.png);
     background-size: contain;
 }
-.methods .first-row-methods .frcr-5{
+
+.methods .first-row-methods .frcr-5 {
     background-image: url(images/methods/bvi.png);
     background-size: contain;
 }
-.methods .first-row-methods .frcr-6{
+
+.methods .first-row-methods .frcr-6 {
     background-image: url(images/methods/bfp.png);
     background-size: contain;
 }
 
-.healthcare-advice .healthcare-advice-1{
+.healthcare-advice .healthcare-advice-1 {
     background-image: url(images/advices/first-advice.png);
     background-size: contain;
 }
-.healthcare-advice .healthcare-advice-2{
+
+.healthcare-advice .healthcare-advice-2 {
     background-image: url(images/advices/2nd-advice.png);
     background-size: contain;
 }
-.healthcare-advice .healthcare-advice-3{
+
+.healthcare-advice .healthcare-advice-3 {
     background-image: url(images/advices/3rd-advice.png);
     background-size: contain;
 }
-.healthcare-advice .healthcare-advice-4{
+
+.healthcare-advice .healthcare-advice-4 {
     background-image: url(images/advices/4th-advice.png);
     background-size: contain;
 }
-.healthcare-advice .healthcare-advice-5{
+
+.healthcare-advice .healthcare-advice-5 {
     background-image: url(images/advices/5th-advice.png);
     background-size: contain;
 }
-.healthcare-advice .healthcare-advice-6{
+
+.healthcare-advice .healthcare-advice-6 {
     background-image: url(images/advices/6th-advice.png);
     background-size: contain;
 }
-.healthcare-advice .healthcare-advice-7{
+
+.healthcare-advice .healthcare-advice-7 {
     background-image: url(images/advices/7th-advice.png);
     background-size: contain;
 }
-.healthcare-advice .healthcare-advice-8{
+
+.healthcare-advice .healthcare-advice-8 {
     background-image: url(images/advices/8th-advice.png);
     background-size: contain;
 }
-.healthcare-advice .healthcare-advice-9{
+
+.healthcare-advice .healthcare-advice-9 {
     background-image: url(images/advices/9th-advice.png);
     background-size: contain;
 }
-.healthcare-advice .healthcare-advice-10{
+
+.healthcare-advice .healthcare-advice-10 {
     background-image: url(images/advices/10th-advice.png);
     background-size: contain;
 }
-.healthcare-advice .healthcare-advice-11{
+
+.healthcare-advice .healthcare-advice-11 {
     background-image: url(images/advices/11th-advice.png);
     background-size: contain;
 }
-.healthcare-advice .healthcare-advice-12{
+
+.healthcare-advice .healthcare-advice-12 {
     background-image: url(images/advices/12th-advice.png);
     background-size: contain;
 }
+
 /* modals styled */
 .modal-heading {
     text-align: center;
     color: rgb(241, 255, 255);
 }
+
 .modal-body {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.modal-body .card{
+
+.modal-body .card {
     background-color: transparent;
     display: flex;
     justify-content: center;
 }
-.modal-body .card-header{
+
+.modal-body .card-header {
     width: 400px;
     display: flex;
     justify-content: center;
 }
-#men-bmr-btn,#women-bmr-btn,#men-bfp-btn,#women-bfp-btn{
+
+#men-bmr-btn,
+#women-bmr-btn,
+#men-bfp-btn,
+#women-bfp-btn {
     width: 110px;
     background-color: #000000;
 }
-.modal-body #instructions-btn{
+
+.modal-body #instructions-btn {
     width: auto;
     padding-right: 20px;
     padding-left: 20px;
     background-color: #000000;
 }
-.modal-body .form-control{
+
+.modal-body .form-control {
     background-color: transparent;
     width: 350px;
     border: 1px solid rgba(178, 213, 254, 0.767);
 }
-.modal-body h4{
+
+.modal-body h4 {
     color: #e7fbff;
     text-align: center;
     margin-top: 5px;
     font-size: 18px;
 }
-.modal-body h5{
+
+.modal-body h5 {
     color: #e7fbff;
     text-align: center;
     margin-top: 5px;
     font-size: 17px;
 }
-.modal-body p{
+
+.modal-body p {
     color: #e4fbff;
     text-align: center;
     margin-top: 5px;
 }
-.modal-body label{
+
+.modal-body label {
     color: rgb(231, 253, 255);
 }
-.modal-body .form-control:focus{
+
+.modal-body .form-control:focus {
     background-color: transparent;
     color: white;
 }
-.modal-body .accordion{
+
+.modal-body .accordion {
     width: 400px;
 }
-#modal-content{
+
+#modal-content {
     background-color: transparent;
     backdrop-filter: blur(60px);
 }
-.modal{
+
+.modal {
     backdrop-filter: blur(60px);
 }
-#bmi-submit,#bmr-submit,#whr-submit,#whtr-submit,#bia-submit{
+
+#bmi-submit,
+#bmr-submit,
+#whr-submit,
+#whtr-submit,
+#bia-submit {
     background-color: #001871;
     color: white;
     transition: all 1s ease;
 }
-#bmi-submit:hover,#bmr-submit:hover,#whr-submit:hover,#whtr-submit:hover,#bia-submit:hover{
+
+#bmi-submit:hover,
+#bmr-submit:hover,
+#whr-submit:hover,
+#whtr-submit:hover,
+#bia-submit:hover {
     border: 1px solid rgb(74, 91, 175);
     background-color: transparent;
 }
-#bmi-submit:active,#bmr-submit:active,#whr-submit:active,#whtr-submit:active,#bia-submit:active{
+
+#bmi-submit:active,
+#bmr-submit:active,
+#whr-submit:active,
+#whtr-submit:active,
+#bia-submit:active {
     background-color: #000000e0;
     color: rgb(86, 86, 86);
 }
 
-.healthcare-advices-hd{
+.healthcare-advices-hd {
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 100px 0px;
 }
 
 
-#weight-loss-btn,#weight-gain-btn,#Metabolism-btn,#Heart-btn,#fitness-btn,#diet-btn,#sleep-btn{
+#weight-loss-btn,
+#weight-gain-btn,
+#Metabolism-btn,
+#Heart-btn,
+#fitness-btn,
+#diet-btn,
+#sleep-btn,
+#yoga-btn {
     background-color: black;
 }
+
 /* services section styled */
-.services-heading{
+.services-heading {
     text-align: center;
     margin: 50px 0px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.sr-cards{
+
+.sr-cards {
     opacity: 0;
     transform: translateY(40px);
     transition: all 1s ease;
@@ -400,21 +494,25 @@ li {
     font-weight: 100;
     color: #001a1c;
 }
-#about .btn{
+
+#about .btn {
     background-color: #000000;
     border-radius: 5px;
     color: white;
     transition: all 0.7s ease;
     padding: 10px;
 }
-#about .btn:hover{
+
+#about .btn:hover {
     border: 1px solid rgb(74, 91, 175);
     background-color: transparent;
     color: black;
 }
-#about .btn:hover a{
+
+#about .btn:hover a {
     color: black;
 }
+
 #btn-div {
     display: flex;
     justify-content: center;
@@ -455,7 +553,7 @@ li {
 
 
 /* thank you note styled */
-.thankyou{
+.thankyou {
     width: 500px;
     font-size: larger;
     font-family: fantasy;
@@ -465,11 +563,13 @@ li {
     padding: 50px 0px;
     color: #000000;
 }
-.thankyou-note{
+
+.thankyou-note {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /* footer styled */
 footer {
     width: 100%;
@@ -501,7 +601,9 @@ footer {
     position: relative;
     z-index: 1;
     color: white;
-    background-image: linear-gradient(180deg, transparent,rgba(0, 0, 0, 0.422),rgba(0, 0, 0, 0.714), rgba(0, 0, 0, 0.824),rgba(0, 0, 0, 0.966));
+    background-image: linear-gradient(180deg, transparent, 
+    rgba(0, 0, 0, 0.422), rgba(0, 0, 0, 0.714), rgba(0, 0, 0, 0.824), 
+    rgba(0, 0, 0, 0.966));
 }
 
 #main-footer-div {
@@ -547,8 +649,8 @@ footer .btn {
 
 /* responsive (media queries) */
 @media screen and (max-width: 480px) {
-    
-    .method-cards{
+
+    .method-cards {
         opacity: 0;
         transform: translateY(20px);
         transition: all 1s ease;
@@ -559,20 +661,23 @@ footer .btn {
         transform: translateY(0);
     }
 
-    .methods .first-row-methods{
+    .methods .first-row-methods {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
-    .methods .first-row-methods .method-cards{
+
+    .methods .first-row-methods .method-cards {
         width: 300px;
         height: 300px;
     }
-    .methods .first-row-methods .method-cards span button{
+
+    .methods .first-row-methods .method-cards span button {
         margin-top: 60px;
     }
-    .what-method{
+
+    .what-method {
         display: none;
     }
 
@@ -607,23 +712,30 @@ footer .btn {
         justify-content: center;
         align-items: center;
     }
+
     .company-div {
         margin-left: 40px;
     }
-    .links-span,.company-span {
+
+    .links-span,
+    .company-span {
         font-size: 20px;
         color: azure;
     }
+
     .follow-us {
         font-size: 16px;
         margin-bottom: -15px;
     }
+
     .company-div {
         font-size: 13;
     }
+
     .middle-logo {
         margin-top: -50px;
     }
+
     footer {
         background-color: #00000057;
         font-size: small;
