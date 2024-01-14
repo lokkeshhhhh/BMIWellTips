@@ -343,6 +343,10 @@ li {
     margin: 100px 0px;
 }
 
+
+#weight-loss-btn,#weight-gain-btn{
+    background-color: black;
+}
 /* services section styled */
 .services-heading{
     text-align: center;
