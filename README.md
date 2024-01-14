@@ -21,8 +21,8 @@ Gain insights into your health by calculating your Waist-to-Height Ratio. This r
 ### 5. BVI (Body Volume Index)
 Explore your Body Volume Index to understand your body's volume distribution. This advanced metric provides additional insights into your body composition.
 
-### 6. BFP (Body Fat Percentage)
-Estimate your ideal body fat percentage with BFP, a valuable tool to assess whether you are within a healthy range for your overall fitness.
+### 6. BAI ( Body Adiposity Index)
+BAI (Body Adiposity Index), which estimates body fat percentage.
 
 ## Advisory Services
 
