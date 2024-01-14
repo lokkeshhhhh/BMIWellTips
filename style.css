@@ -425,8 +425,12 @@ li {
     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 100px 0px;
 }
-
-
+.modal strong{
+    color: rgb(113, 204, 249);
+}
+.modal .card-body h5{
+    color: rgb(113, 204, 249);
+}
 #weight-loss-btn,
 #weight-gain-btn,
 #Metabolism-btn,
@@ -434,7 +438,8 @@ li {
 #fitness-btn,
 #diet-btn,
 #sleep-btn,
-#yoga-btn {
+#yoga-btn,
+#meditation-btn {
     background-color: black;
 }
 
