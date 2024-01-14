@@ -318,10 +318,10 @@ li {
 }
 #modal-content{
     background-color: rgba(5, 5, 5, 0.126);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
 }
 .modal{
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
 }
 #bmi-submit,#bmr-submit,#whr-submit,#whtr-submit,#bia-submit{
     background-color: #001871;
@@ -344,7 +344,7 @@ li {
 }
 
 
-#weight-loss-btn,#weight-gain-btn{
+#weight-loss-btn,#weight-gain-btn,#Metabolism-btn{
     background-color: black;
 }
 /* services section styled */
