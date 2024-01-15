@@ -18,7 +18,9 @@ body::-webkit-scrollbar-thumb {
     background-color: #000000;
     border: 1px solid rgb(9, 16, 52);
 }
-
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
 /* navbar styled */
 
 #navbar li a {
@@ -311,7 +313,7 @@ li {
 
 .modal-body {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
 }
@@ -335,7 +337,10 @@ li {
     width: 110px;
     background-color: #000000;
 }
-
+.modal-body #instructions{
+    width: 350px;
+    margin: 5%;
+}
 .modal-body #instructions-btn {
     width: auto;
     padding-right: 20px;
@@ -345,7 +350,7 @@ li {
 
 .modal-body .form-control {
     background-color: transparent;
-    width: 350px;
+    width: 320px;
     border: 1px solid rgba(178, 213, 254, 0.767);
 }
 
@@ -380,6 +385,10 @@ li {
 
 .modal-body .accordion {
     width: 400px;
+}
+
+.modal-body .accordion-bmr {
+    width: 350px;
 }
 
 #modal-content {
@@ -421,8 +430,6 @@ li {
 
 .healthcare-advices-hd {
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
-    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 100px 0px;
 }
 .modal strong{
@@ -447,8 +454,7 @@ li {
 .services-heading {
     text-align: center;
     margin: 50px 0px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
-    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .sr-cards {
@@ -512,7 +518,7 @@ li {
     width: 100%;
     height: auto;
     background-color: rgb(255, 255, 255);
-    font-family: Geneva, Tahoma, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     word-spacing: 2px;
     font-weight: 100;
     color: #001a1c;
@@ -599,7 +605,7 @@ footer {
     height: 100%;
     background-color: transparent;
     font-size: small;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: fantasy;
     letter-spacing: 2px;
 }
 
@@ -699,7 +705,12 @@ footer .btn {
     .methods .first-row-methods .method-cards span button {
         margin-top: 60px;
     }
-
+    .healthcare-ad .modal-body .accordion{
+        width: 300px;
+    }
+    .healthcare-ad .modal-body .card-header {
+        width: 100%;
+    }
     .what-method {
         display: none;
     }

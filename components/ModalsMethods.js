@@ -46,7 +46,7 @@ const methodModals =
                 </div>
 
                 <div class="modal-body" >
-                    <div class="accordion" id="accordion">
+                    <div class="accordion accordion-bmr" id="accordion">
                         <div class="card" id="forMen">
                             <div class="card-header"><a href="#men-bmr" class="btn text-white ms-1"
                                     data-bs-toggle="collapse" id="men-bmr-btn">For Men </a></div>
