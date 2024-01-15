@@ -40,22 +40,26 @@ const footer = `
                     <li>
                         <a href="https://instagram.com/lokkeshhhhh?utm_source=qr&igshid=YzU1NGVlODEzOA==" target="_blank">
                             <img src="images/socials/insta-b.png" alt="Instagram" width="30px" class="m-2 img-fluid">
-                        </a><span class="social-span">Instagram</span>
+                            <span class="social-span">Instagram</span>
+                        </a>
                     </li>
                     <li>
                         <a href="https://twitter.com/lokkeshhhhh" target="_blank">
                             <img src="images/socials/x-b.png" alt="Twitter" width="30px" class="m-2 img-fluid">
-                        </a><span class="social-span">Twitter</span>
+                            <span class="social-span">Twitter</span>
+                        </a>
                     </li>
                     <li>
                         <a href="https://facebook.com" target="_blank">
                             <img src="images/socials/fb-b.png" alt="Facebook" width="30px" class="m-2 img-fluid">
-                        </a><span class="social-span">Facebook</span>
+                            <span class="social-span">Facebook</span>
+                        </a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/lokesh-kumawat-1b1692280/" target="_blank">
                             <img src="images/socials/link-b.png" alt="LinkedIn" width="30px" class="m-2 img-fluid">
-                        </a><span class="social-span">LinkedIn</span>
+                            <span class="social-span">LinkedIn</span>
+                        </a>
                     </li>
                 </ul>
         </div>
