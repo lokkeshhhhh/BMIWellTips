@@ -64,8 +64,7 @@ const footer = `
     <!-- copyright and privacy policy  -->
     <div class="policies container-fluid-sm">
         <p class="text-center mt-5 text-secondary">Developer - Lokesh Kumawat</p>
-        <p class="text-center mt-5 text-secondary">© 2023 - 2024 BMIWellTips. All rights reserved. <br> <a href="#" class="text-secondary">Cookies are not used.</a> <br><a href="#">Privacy and Terms</a></p>
-        <p style="font-size: small;text-align: center;color: rgb(147, 65, 10);">Jai Shri Ram</p>
+        <p class="text-center mt-5 text-secondary">© 2023 - 2024 BMIWellTips. All rights reserved. <br><a href="#">Privacy and Terms</a></p>
     </div>
     
 </div>
