@@ -1,4 +1,4 @@
-# [BMIWellTips - "Wellness Within You"](‎https://lokkeshhhhh.github.io/BMIWellTips/)
+# [BMIWellTips](‎https://lokkeshhhhh.github.io/BMIWellTips/) - "Wellness Within You"
 ## Overview
 
 BMIWellTips is a comprehensive healthcare advisory platform that focuses on providing valuable insights into key health metrics, including **BMI** (Body Mass Index), **BMR** (Basal Metabolic Rate), **WHR** (Waist-to-Hip Ratio), **WHrT** (Waist-to-Height Ratio), **BVI** (Body Volume Index), and **BrI** (Broca's Index). We are dedicated to offering personalized advice on diet and exercise to help you achieve your health and wellness goals.
