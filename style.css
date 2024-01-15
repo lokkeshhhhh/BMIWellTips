@@ -329,11 +329,12 @@ li {
 }
 
 #men-bmr-btn,
-#women-bmr-btn,
-#men-bfp-btn,
-#women-bfp-btn {
-    width: 110px;
+#women-bmr-btn{
+    width: 200px;
     background-color: #000000;
+}
+.modal-body .accordion-bmr .card-header{
+    width: 100%;
 }
 .modal-body #instructions{
     width: 350px;
