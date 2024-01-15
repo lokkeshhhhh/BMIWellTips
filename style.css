@@ -18,9 +18,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #000000;
     border: 1px solid rgb(9, 16, 52);
 }
-p{
-    font-family: 'Times New Roman', Times, serif;
-}
+
 /* navbar styled */
 
 #navbar li a {
@@ -63,7 +61,7 @@ li {
     rgba(0, 0, 0, 0.537), rgba(0, 0, 0, 0.622), rgba(0, 0, 0, 0.714), 
     rgba(0, 0, 0, 0.881), rgb(0, 0, 0));
     backdrop-filter: blur(0px);
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -430,6 +428,8 @@ li {
 
 .healthcare-advices-hd {
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 100px 0px;
 }
 .modal strong{
@@ -454,7 +454,8 @@ li {
 .services-heading {
     text-align: center;
     margin: 50px 0px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .sr-cards {
@@ -518,7 +519,7 @@ li {
     width: 100%;
     height: auto;
     background-color: rgb(255, 255, 255);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Geneva, Tahoma, sans-serif;
     word-spacing: 2px;
     font-weight: 100;
     color: #001a1c;
@@ -605,7 +606,7 @@ footer {
     height: 100%;
     background-color: transparent;
     font-size: small;
-    font-family: fantasy;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 2px;
 }
 
