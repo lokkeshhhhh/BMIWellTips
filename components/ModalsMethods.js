@@ -128,7 +128,7 @@ const methodModals =
 
                 <div class="modal-footer">
                     <button class="btn" id="bmr-submit">Check BMR!</button>
-                </div>
+                </div> 
             </div>
         </div>
     </div>
