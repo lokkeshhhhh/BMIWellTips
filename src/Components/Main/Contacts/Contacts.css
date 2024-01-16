@@ -1,0 +1,36 @@
+.contacts-pg{
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    letter-spacing: 1px;
+    font-family: Geneva, Tahoma, sans-serif;
+}
+.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+.contacts-pg .contacts-first{
+    width: 50%;
+}
+.contacts-pg .contacts-second{
+    width: 50%;
+}
+
+@media screen and (max-width: 480px) {
+    
+    .contacts-pg{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contacts-pg .contacts-first{
+        width: 100%;
+    }
+    .contacts-pg .contacts-second{
+        width: 100%;
+    }
+    
+
+}

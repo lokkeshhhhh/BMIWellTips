@@ -1,0 +1,97 @@
+
+#about-pg1,
+#about-pg2 {
+    display: flex;
+    overflow: hidden;
+}
+
+.middle-logo {
+    margin-top: -30px;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0px 10px;
+}
+
+#about-pg1 .first {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(133, 156, 156, 0.523);
+    display: flex;
+    justify-content: center;
+}
+
+#about-pg2 .first {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(133, 156, 156, 0.523);
+    display: flex;
+    justify-content: center;
+}
+
+#about-pg1 .second,
+#about-pg2 .second {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    font-family: Geneva, Tahoma, sans-serif;
+    word-spacing: 2px;
+    font-weight: 100;
+    color: #001a1c;
+}
+
+#about .btn {
+    background-color: #000000;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.7s ease;
+    padding: 10px;
+}
+
+#about .btn:hover {
+    border: 1px solid rgb(74, 91, 175);
+    background-color: transparent;
+    color: black;
+}
+
+#about .btn:hover a {
+    color: black;
+}
+
+#btn-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.second a {
+    text-decoration: none;
+    color: azure;
+}
+
+
+.card-fist {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#about-pg1 .second {
+    opacity: 0;
+    transform: translateX(640px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+#about-pg2 .second {
+    opacity: 0;
+    transform: translateX(-640px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+

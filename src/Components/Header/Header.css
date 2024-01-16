@@ -1,0 +1,38 @@
+/* remove extra padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* navbar styled */
+
+#navbar li a {
+    padding: 10px 15px;
+}
+
+#navbar .nav-item .active {
+    background-color: rgb(1, 11, 40);
+    border: none;
+    color: rgba(208, 249, 255, 0.982);
+    border: 1px solid rgb(74, 91, 175);
+}
+
+#navbar .nav-link:hover {
+    border: 1px solid rgb(0, 74, 72);
+}
+
+li {
+    list-style-type: none;
+}
+
+#main-div {
+    background-color: rgb(1, 21, 26);
+    background-image: linear-gradient(90deg,
+    rgb(0, 0, 11), rgba(14, 1, 37, 0.272));
+}
+
+#main-navbar {
+    backdrop-filter: blur(10px);
+    background-color: transparent;
+}

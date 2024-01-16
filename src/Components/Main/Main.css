@@ -1,0 +1,260 @@
+
+/* modals styled */
+.modal-heading {
+    text-align: center;
+    color: rgb(241, 255, 255);
+}
+
+.modal-body {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-body .card {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-body .card-header {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+#men-bmr-btn,
+#women-bmr-btn{
+    width: 200px;
+    background-color: #000000;
+}
+.modal-body .accordion-bmr .card-header{
+    width: 100%;
+}
+.modal-body #instructions{
+    width: 350px;
+    margin: 5%;
+}
+.modal-body #instructions-btn {
+    width: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #000000;
+}
+
+.modal-body .form-control {
+    background-color: transparent;
+    width: 320px;
+    border: 1px solid rgba(178, 213, 254, 0.767);
+}
+
+.modal-body h4 {
+    color: #e7fbff;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.modal-body h5 {
+    color: #e7fbff;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+.modal-body p {
+    color: #e4fbff;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.modal-body label {
+    color: rgb(231, 253, 255);
+}
+
+.modal-body .form-control:focus {
+    background-color: transparent;
+    color: white;
+}
+
+.modal-body .accordion {
+    width: 400px;
+}
+
+.modal-body .accordion-bmr {
+    width: 350px;
+}
+
+#modal-content {
+    background-color: transparent;
+    backdrop-filter: blur(60px);
+}
+
+.modal {
+    backdrop-filter: blur(60px);
+}
+
+#bmi-submit,
+#bmr-submit,
+#whr-submit,
+#whtr-submit,
+#bia-submit {
+    background-color: #001871;
+    color: white;
+    transition: all 1s ease;
+}
+
+#bmi-submit:hover,
+#bmr-submit:hover,
+#whr-submit:hover,
+#whtr-submit:hover,
+#bia-submit:hover {
+    border: 1px solid rgb(74, 91, 175);
+    background-color: transparent;
+}
+
+#bmi-submit:active,
+#bmr-submit:active,
+#whr-submit:active,
+#whtr-submit:active,
+#bia-submit:active {
+    background-color: #000000e0;
+    color: rgb(86, 86, 86);
+}
+
+.healthcare-advices-hd {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 100px 0px;
+}
+.modal strong{
+    color: rgb(113, 204, 249);
+}
+.modal .card-body h5{
+    color: rgb(113, 204, 249);
+}
+#weight-loss-btn,
+#weight-gain-btn,
+#Metabolism-btn,
+#Heart-btn,
+#fitness-btn,
+#diet-btn,
+#sleep-btn,
+#yoga-btn,
+#meditation-btn {
+    background-color: black;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .method-cards {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 1s ease;
+    }
+
+    .loaded {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .methods .first-row-methods {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .methods .first-row-methods .method-cards {
+        width: 300px;
+        height: 300px;
+    }
+
+    .methods .first-row-methods .method-cards span button {
+        margin-top: 60px;
+    }
+    .healthcare-ad .modal-body .accordion{
+        width: 300px;
+    }
+    .healthcare-ad .modal-body .card-header {
+        width: 100%;
+    }
+    .what-method {
+        display: none;
+    }
+
+    #about-pg1,
+    #about-pg2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #about-pg1 .second button,
+    #about-pg2 .second button {
+        font-size: 10px;
+        padding: 10px 8px;
+        width: auto;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .contacts-pg{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contacts-pg .contacts-first{
+        width: 100%;
+    }
+    .contacts-pg .contacts-second{
+        width: 100%;
+    }
+    
+    .all-links,
+    .socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .company-div {
+        margin-left: 40px;
+    }
+
+    .links-span,
+    .company-span {
+        font-size: 20px;
+        color: azure;
+    }
+
+    .follow-us {
+        font-size: 16px;
+        margin-bottom: -15px;
+    }
+
+    .company-div {
+        font-size: 13;
+    }
+
+    .middle-logo {
+        margin-top: -50px;
+    }
+
+    footer {
+        background-color: #00000057;
+        font-size: small;
+    }
+}
