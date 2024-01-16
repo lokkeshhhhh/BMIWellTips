@@ -1,30 +1,30 @@
 .methods .first-row-methods .frcr-1 {
-    background-image: url(images/methods/bmi.png);
+    background-image: url(/public/images/methods/bmi.png);
     background-size: contain;
 }
 
 .methods .first-row-methods .frcr-2 {
-    background-image: url(images/methods/bmr.png);
+    background-image: url(/images/methods/bmr.png);
     background-size: contain;
 }
 
 .methods .first-row-methods .frcr-3 {
-    background-image: url(images/methods/whr.png);
+    background-image: url(/images/methods/whr.png);
     background-size: contain;
 }
 
 .methods .first-row-methods .frcr-4 {
-    background-image: url(images/methods/whrt1.png);
+    background-image: url(/images/methods/whrt1.png);
     background-size: contain;
 }
 
 .methods .first-row-methods .frcr-5 {
-    background-image: url(images/methods/bvi.png);
+    background-image: url(/images/methods/bvi.png);
     background-size: contain;
 }
 
 .methods .first-row-methods .frcr-6 {
-    background-image: url(images/methods/bfp.png);
+    background-image: url(/images/methods/bfp.png);
     background-size: contain;
 }
 
