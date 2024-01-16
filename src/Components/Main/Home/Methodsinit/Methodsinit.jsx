@@ -1,4 +1,5 @@
 import React from "react";
+import './Methodsinit.css'
 
 export default function Methosinit(){
     

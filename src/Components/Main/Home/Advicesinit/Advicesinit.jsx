@@ -1,4 +1,5 @@
 import React from "react";
+import './Adviceinit.css'
 
 export default function Advicesinit(){
     return(
