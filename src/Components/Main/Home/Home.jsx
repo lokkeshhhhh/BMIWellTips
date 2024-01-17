@@ -45,7 +45,7 @@ export default function Home() {
                     {/* <!-- content over video --> */}
                     <div className="content">
                         <div className="health-quote"><h1 className="text-center">"Wellness Within You"</h1></div>
-                        <div className="bmi-btn"><a href="#home-content-2" ><button className="btn">Measure Your Health</button></a></div>
+                        <div className="bmi-btn"><a href="#home-content-2" ><button className="btn" id="home-bmi-btn">Measure Your Health</button></a></div>
                         <div className="health-quote-2"><p>Prioritizing optimal health indices is vital for well-being, reducing
                             the risk of chronic conditions. Aim for values within recommended ranges for each index to comprehensively
                             support your overall health and vitality, fostering a foundation for a thriving future.</p>
