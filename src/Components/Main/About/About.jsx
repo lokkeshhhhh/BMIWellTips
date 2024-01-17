@@ -49,7 +49,7 @@ export default function About() {
         })
 
         document.getElementById("about-bmi").addEventListener('click', () => {
-            document.getElementById("home-bmi-btn").click();
+            document.querySelector("#home-btn").click();
         })
         document.querySelectorAll("#about-developer").forEach((element) =>{
             element.addEventListener('click', () => {
