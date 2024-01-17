@@ -190,12 +190,16 @@
         display: none;
     }
 
-    #about #about-pg2,#about #about-pg1{
+    #about #about-pg2{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column-reverse;
     }
-
+    #about #about-pg1{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
     #about-pg1 .second button,
     #about-pg2 .second button {
         font-size: 10px;
