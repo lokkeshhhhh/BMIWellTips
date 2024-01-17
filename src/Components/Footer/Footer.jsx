@@ -50,30 +50,30 @@ export default function Footer() {
                     <div className="container-fluid-sm p-1 mt-5 text-white all-links mb-5">
                         {/* <!-- links to navigate within the site --> */}
                         <div className="container-fluid-sm links-div">
-                            <span className="ms-5 links-span">Links :</span>
+                            <span className="ms-5 links-span">Links </span>
                             <ul className="mt-3 ms-1">
-                                <li><button className="btn" id="f-home">Home</button></li>
-                                <li><button className="btn" id="f-services">Services</button></li>
-                                <li><button className="btn " id="f-contacts">Contacts</button></li>
-                                <li><button className="btn " id="f-about">About us</button></li>
-                                <li><button className="btn " id="f-blogs">Blogs</button></li>
+                                <li><a href="#"><button className="btn" id="f-home">Home</button></a></li>
+                                <li><a href="#"><button className="btn" id="f-services">Services</button></a></li>
+                                <li><a href="#"><button className="btn " id="f-contacts">Contacts</button></a></li>
+                                <li><a href="#"><button className="btn " id="f-about">About us</button></a></li>
+                                <li><a href="#"><button className="btn " id="f-blogs">Blogs</button></a></li>
                             </ul>
                         </div>
 
                         {/* <!-- links  --> */}
                         <div className="container-fluid-sm company-div">
-                            <span className="company-span ms-5">Company :</span>
+                            <span className="company-span ms-5">Company </span>
                             <ul className="mt-3 ms-1">
-                                <li><button className=" btn" id="f-about">About us</button></li>
-                                <li><button className=" btn" id="f-blogs">About Dev</button></li>
-                                <li><button className=" btn portfolio"><a href="https://github.com/lokkeshhhhh" target="_blank">Dev's Portfolio</a></button></li>
-                                <li><button className=" btn" id="f-blogs">Blogs</button></li>
+                                <li><a href="#"><button className=" btn" id="f-about">About us</button></a></li>
+                                <li><a href="#"><button className=" btn" id="f-blogs">About Dev</button></a></li>
+                                <li><a href="https://github.com/lokkeshhhhh" target="_blank"><button className=" btn portfolio">Dev's Portfolio</button></a></li>
+                                <li><a href="#"><button className=" btn" id="f-blogs">Blogs</button></a></li>
                             </ul>
                         </div>
 
                         {/* <!-- social links --> */}
                         <div className="container-fluid-sm socials mt-1">
-                            <span className="follow-us ms-5">Follow Us On  :</span><br />
+                            <span className="follow-us ms-5">Follow Us </span><br />
                             <ul className="container-fluid-sm socials-links mt-3">
                                 <li>
                                     <a href="https://instagram.com/lokkeshhhhh?utm_source=qr&igshid=YzU1NGVlODEzOA==" target="_blank">

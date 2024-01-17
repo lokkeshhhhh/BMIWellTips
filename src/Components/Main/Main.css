@@ -1,4 +1,9 @@
 
+::-webkit-scrollbar{
+    scroll-behavior: smooth;
+}
+
+
 /* modals styled */
 .modal-heading {
     text-align: center;

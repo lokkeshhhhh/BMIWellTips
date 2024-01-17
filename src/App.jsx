@@ -4,8 +4,6 @@ import Main from './Components/Main/Maincontent'
 import Footer from './Components/Footer/Footer'
 
 function App() {
-
-
   return (
     <>
       <Header />
