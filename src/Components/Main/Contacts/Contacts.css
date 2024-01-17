@@ -17,3 +17,20 @@
 .contacts-pg .contacts-second{
     width: 50%;
 }
+
+@media screen and (max-width: 580px) {
+    
+    .contacts-pg{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contacts-pg .contacts-first{
+        width: 100%;
+    }
+    .contacts-pg .contacts-second{
+        width: 100%;
+    }
+    
+
+}
