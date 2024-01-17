@@ -190,7 +190,7 @@
         display: none;
     }
 
-    #about #about-pg2{
+    #about #about-pg2,#about #about-pg1{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column-reverse;
@@ -213,7 +213,7 @@
         text-overflow: ellipsis;
     }
 
-    .contacts-pg{
+    #contacts #contacts-pg{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
