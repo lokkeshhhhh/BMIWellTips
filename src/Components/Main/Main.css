@@ -2,7 +2,19 @@
 ::-webkit-scrollbar{
     scroll-behavior: smooth;
 }
-
+::-webkit-scrollbar {
+    width: 12px; 
+}
+::-webkit-scrollbar-thumb {
+    background-color: #021e4f; 
+    border-radius: 6px; 
+}
+::-webkit-scrollbar-track {
+    background-color: #252525;
+}
+::-webkit-scrollbar-track:hover {
+    background-color: rgb(70, 70, 70);
+}
 
 /* modals styled */
 .modal-heading {
