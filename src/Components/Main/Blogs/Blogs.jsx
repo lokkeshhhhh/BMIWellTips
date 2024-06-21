@@ -12,7 +12,7 @@ export default function Blogs(){
     return(
         <>
             <div className="tab-pane container fade" id="blogs">
-                <h1 style={style}>Will Be Uploaded Soon</h1>
+                <h1 style={style}>Will Be Uploaded Soon...</h1>
             </div>
         </>
     )
